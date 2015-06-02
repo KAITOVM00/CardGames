@@ -11,6 +11,7 @@ namespace Game_Class_Library
     {
         static CardPile deck; //to hold the draw deck
         static CardPile current; //to hold the discard deck
+        
         //Suit piles for win condition
         static Card SuitPile1;
         static Card SuitPile2;
@@ -38,6 +39,10 @@ namespace Game_Class_Library
         public static int[] GetRevealed()
         {
             return playRevealed;
+        }
+        public static List<Hand> GetPlayPiles()
+        {
+            return playPiles;
         }
     }
 }

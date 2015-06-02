@@ -23,7 +23,7 @@ namespace Gui_Games
         {
             if (GameSelect.SelectedIndex == 0)
             {
-
+                new SolitaireForm().Show();
             }
             else if (GameSelect.SelectedIndex == 1)
             {

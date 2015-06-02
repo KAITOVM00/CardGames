@@ -33,8 +33,9 @@ namespace Gui_Games
         public CEForm()
         {
             InitializeComponent();
-            playerPBox = new PictureBox[13];
-            computerPBox = new PictureBox[13];
+            int maxNumberOfCards = 13;
+            playerPBox = new PictureBox[maxNumberOfCards];
+            computerPBox = new PictureBox[maxNumberOfCards];
             SetupDeck();
             InstructionText.Text = dealText;
 
@@ -52,7 +53,7 @@ namespace Gui_Games
         /// <summary>
         /// Refreshes all the images based on current hands, deck and discard piles
         /// </summary>
-        private void Refresh()
+        private void RefreshScreen()
         {
             UpdatePHand();
             DisplayPHand();
@@ -153,7 +154,7 @@ namespace Gui_Games
                 }
                 Crazy_Eights_Game.PlayerTurn(Selected,card);
                 Crazy_Eights_Game.ComputerTurn();
-                Refresh();
+                RefreshScreen();
             }
             else
             {
@@ -163,7 +164,7 @@ namespace Gui_Games
 
                     Crazy_Eights_Game.ComputerTurn();
                     InstructionText.Text = yourTurnText;
-                    Refresh();
+                    RefreshScreen();
                 }
                 else //If no card is played, change instruction text
                 {
@@ -179,7 +180,6 @@ namespace Gui_Games
         {
             Card card = Crazy_Eights_Game.GetTopOfDiscard();
             DiscardPB.Image = Images.GetCardImage(card);
-            //check current top of discard pile and set picturebox to that card
         }
 
         /// <summary>
@@ -205,14 +205,14 @@ namespace Gui_Games
             Crazy_Eights_Game.SetupGame();
             DealBtn.Enabled = false;
             SortBtn.Enabled = true;
-            Refresh();
+            RefreshScreen();
             InstructionText.Text = yourTurnText;
         }
 
         private void SortBtn_Click(object sender, EventArgs e)
         {
             Crazy_Eights_Game.SortPlayerHand();
-            Refresh();
+            RefreshScreen();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
@@ -228,7 +228,7 @@ namespace Gui_Games
                 InstructionText.Text = canDrawText;
             }
             Crazy_Eights_Game.DeckDiscardSwap();
-            Refresh();
+            RefreshScreen();
             MessageBox.Show(Crazy_Eights_Game.GetDeck().GetCount().ToString());
         }
     }
