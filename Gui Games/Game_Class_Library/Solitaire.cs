@@ -24,22 +24,25 @@ namespace Game_Class_Library
         static Card SuitPile4;
 
         //Play piles and currently revealed card in associated pile
-        static int maxCards = 13;
-        static int numOfPlayerPiles = 7;
+        static int maxCards = 15;
+        static int numOfHands = 7;
         static List<Hand> playHands = new List<Hand>();
-        static int[] playRevealed = new int[numOfPlayerPiles];
+        static int[] playRevealed = new int[numOfHands];
         
         //Chosen index of playHands, to be changed when player clicks a Hand
         //-1 indicates that it's currently not selected
         static int moveFromNotSet = -1;
         static int moveFrom = moveFromNotSet;
+
+        static Card selected = new Card();
         /// <summary>
         /// Sets up the solitare game from beginning 
         /// </summary>
         public static void SetupGame()
         {
             deck = new CardPile(true);
-            for (int i = 0; i < numOfPlayerPiles; i++)
+            deck.ShufflePile();
+            for (int i = 0; i < numOfHands; i++)
             {
                 playRevealed[i] = i;
                 Hand temp = new Hand(deck.DealCards(i + 1));
@@ -48,6 +51,112 @@ namespace Game_Class_Library
             current.AddCard(deck.DealOneCard());
         }
 
+        /// <summary>
+        /// Sets the currently selected Card, if a card is already selected
+        /// then it means you want to move the card, so checks and moves the
+        /// hand from pile to pile
+        /// </summary>
+        /// <param name="card">Pre: Must be an instantiated Card</param>
+        /// <returns>Bool: Returns true if a card was </returns>
+        public static bool SetSelected(Card card)
+        {
+            if (selected == null)
+            {
+                selected = card;
+                return false;
+            }
+            else if (selected != null)
+            {
+                int error = -1;
+                //find new position and run check
+                int[] currentPos = GetSelectedPosition(selected);
+                if(currentPos[0] == error )
+                {
+                    return false;
+                }
+                int pHIndex1 = currentPos[0]; //play hand index
+                int cPIndex1 = currentPos[1]; //card play index
+                Hand moveFrom = GenerateHand(pHIndex1, cPIndex1);
+                if (CheckHandCanBeMoved(moveFrom))
+                {
+                    currentPos = GetSelectedPosition(card);
+                    int pHIndex2 = currentPos[0];
+                    int cPIndex2 = currentPos[1];
+                    Hand moveTo = GenerateHand(pHIndex2,cPIndex2);
+                    if(CheckPossibleMove(moveFrom,moveTo))
+                    {
+                        AddHandToHand(moveTo, moveFrom);
+                        RemoveHand(pHIndex1, cPIndex1);
+                    }
+                }
+
+                selected = new Card(); // reset the selected Card
+                return true;
+            }
+            return false;
+        }
+
+
+        /// <summary>
+        /// Generates a hand from the piles, pile pHIndex and card cPIndex 
+        /// till the end of the pile
+        /// </summary>
+        /// <param name="pHIndex">Pre: Int >= 0</param>
+        /// <param name="cPIndex">Pre: Int >= 0</param>
+        /// <returns>Hand: Returns the generated hand from given pile 
+        /// and card index</returns>
+        private static Hand GenerateHand(int pHIndex, int cPIndex)
+        {
+            Hand hand = new Hand();
+            int max = playHands[pHIndex].GetCount();
+            for (int i = cPIndex; i < max; i++)
+            {
+                hand.AddCard(playHands[pHIndex].GetCard(i));
+            }
+            return hand;
+        }
+        
+        /// <summary>
+        /// Removes a set of cards from a generated pile, pile pHindex, card
+        /// cPIndex onwards
+        /// </summary>
+        /// <param name="pHIndex">Pre: Int >= 0</param>
+        /// <param name="cPIndex">Pre: Int >= 0</param>
+        private static void RemoveHand(int pHIndex, int cPIndex)
+        {
+            Hand hand = new Hand();
+            int max = playHands[pHIndex].GetCount();
+            for (int i = cPIndex; i < max; i++)
+            {
+                playHands[pHIndex].RemoveCardAt(i);
+            }
+        }
+
+        /// <summary>
+        /// Gets the position of the currently selected card
+        /// </summary>
+        /// <returns>Int[]: returns [i,j], where i is the index of player
+        /// hand, j is the selected card index inside that hand. Returns 
+        /// [-1,-1] if could not be found</returns>
+        public static int[] GetSelectedPosition(Card card)
+        {
+            int[] position = new int[2];
+            for (int i = 0; i < numOfHands; i++)
+            {
+                for (int j = 0; j < maxCards; j++)
+                {
+                    if (card.Equals(playHands[i].GetCard(j)))
+                    {
+                        position[0] = i;
+                        position[1] = j;
+                        return position;
+                    }
+                }
+            }
+            position[0] = -1;
+            position[1] = -1;
+            return position;
+        }
 
         public static CardPile GetCurrent()
         {
@@ -57,6 +166,8 @@ namespace Game_Class_Library
         {
             return playRevealed;
         }
+
+
         /// <summary>
         /// Returns a play pile corresponding to the 'Hand' of one of the 
         /// seven lines of cards
@@ -78,28 +189,20 @@ namespace Game_Class_Library
         }
 
         /// <summary>
-        /// Selector function for moving cards around on the game form, 
-        /// taking two inputs, the index of the Hand list, and the index
-        /// of which card and cards below that card to move
+        /// Adds the cards from one hand to another hand in the play board
         /// </summary>
-        /// <param name="moveTo">Pre: integer between 0 and 6</param>
-        /// <param name="cardIndex">Pre: integer between 0 and 12</param>
-        /// <returns></returns>
-        public static bool AddHandToHand(int move, int cardIndex)
+        /// <param name="handTo">Pre: Must be an instantiated hand taken from
+        /// the play board</param>
+        /// <param name="handFrom">Pre: Must be an instantiated hand taken from
+        /// the play board</param>
+        public static void AddHandToHand(Hand handTo, Hand handFrom)
         {
-            if (moveFrom == moveFromNotSet)
+            int[] toPos = GetSelectedPosition(handTo.GetCard(0));
+            int[] fromPos = GetSelectedPosition(handFrom.GetCard(0));
+            for (int i = toPos[1]; i < playHands[fromPos[0]].GetCount(); i++)
             {
-                moveFrom = move;
-                return true;
+                playHands[toPos[0]].AddCard(playHands[fromPos[0]].GetCard(i));
             }
-            if (moveFrom != moveFromNotSet)
-            {
-                for (int i = cardIndex; i < playHands[move].GetCount(); i++)
-                {
-
-                }
-            }
-            return false;
         }
 
         /// <summary>

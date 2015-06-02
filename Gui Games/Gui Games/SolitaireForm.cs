@@ -13,6 +13,11 @@ using GuiGames;
 
 namespace Gui_Games
 {
+    /// <summary>
+    /// Displays the Solitaire form in conjunction with the solitaire
+    /// game class library for playing the game. Handles all the events
+    /// of the windows form.
+    /// </summary>
     public partial class SolitaireForm : Form
     {
         PictureBox[] PlayPilesPB1;
@@ -22,7 +27,7 @@ namespace Gui_Games
         PictureBox[] PlayPilesPB5;
         PictureBox[] PlayPilesPB6;
         PictureBox[] PlayPilesPB7;
-        int maxNumberOfCards = 13;
+        int maxNumberOfCards = 15;
 
         public SolitaireForm()
         {
@@ -125,7 +130,13 @@ namespace Gui_Games
         
         private void PlayPBox1_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 0;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -177,7 +188,13 @@ namespace Gui_Games
 
         private void PlayPBox2_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 1;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -229,7 +246,13 @@ namespace Gui_Games
 
         private void PlayPBox3_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 2;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -281,7 +304,13 @@ namespace Gui_Games
 
         private void PlayPBox4_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 3;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -333,7 +362,13 @@ namespace Gui_Games
 
         private void PlayPBox5_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 4;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -385,7 +420,13 @@ namespace Gui_Games
 
         private void PlayPBox6_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 5;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            Solitaire.SetSelected(selected);
+            RefreshScreen();
         }
 
         /// <summary>
@@ -437,7 +478,14 @@ namespace Gui_Games
 
         private void PlayPBox7_Click(object sender, EventArgs e)
         {
-
+            int[] whichCard;
+            int playBoxIndex = 6;
+            PictureBox whichClicked = (PictureBox)sender;
+            whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
+            MessageBox.Show(whichCard[1].ToString());
+            //Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            //Solitaire.SetSelected(selected);
+            //RefreshScreen();
         }
     }
 }
