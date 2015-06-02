@@ -101,6 +101,35 @@ namespace Game_Class_Library
             return playerHand;
         }
 
+        /// <summary>
+        /// Finds the specified card in the players hand
+        /// </summary>
+        /// <param name="card">Pre: Must be an instantiated Card inside the 
+        /// players hand</param>
+        /// <returns>Int: Returns the index position of the card
+        /// inside the players hand</returns>
+        public static int WhichCard(Card card)
+        {
+            int count = 0;
+            foreach (Card i in playerHand)
+            {
+                if (card.Equals(i))
+                {
+                    return count;
+                }
+                count++;
+            }
+            return -1;
+        }
+
+        /// <summary>
+        /// Gets the computers Hand
+        /// </summary>
+        /// <returns>Hand: Returns the computers Hand</returns>
+        public static Hand GetComputerHand()
+        {
+            return compHand;
+        }
 
         /// <summary>
         /// Checks a given card and determines if it's a legal move

@@ -22,3 +22,4 @@ C:\Users\thall_000\Google Drive\Uni\CAB201\Assignment\Assignment4\Gui Games\Gui 
 C:\Users\thall_000\Google Drive\Uni\CAB201\Assignment\Assignment4\Gui Games\Gui Games\bin\Debug\Shared Game Class Library.pdb
 C:\Users\thall_000\Google Drive\Uni\CAB201\Assignment\Assignment4\Gui Games\Gui Games\obj\Debug\Gui_Games.SuitSelection.resources
 C:\Users\thall_000\Google Drive\Uni\CAB201\Assignment\Assignment4\Gui Games\Gui Games\bin\Debug\Gui Games.exe
+C:\Users\thall_000\Google Drive\Uni\CAB201\Assignment\Assignment4\Gui Games\Gui Games\obj\Debug\Gui_Games.SolitaireForm.resources

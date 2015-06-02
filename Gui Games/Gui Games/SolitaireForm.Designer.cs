@@ -30,10 +30,10 @@
         {
             this.DeckPB = new System.Windows.Forms.PictureBox();
             this.CurrentPB = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.SuitPile3 = new System.Windows.Forms.PictureBox();
+            this.SuitPile4 = new System.Windows.Forms.PictureBox();
+            this.SuitPile2 = new System.Windows.Forms.PictureBox();
+            this.SuitPile1 = new System.Windows.Forms.PictureBox();
             this.Column1TLP = new System.Windows.Forms.TableLayoutPanel();
             this.Column2TLP = new System.Windows.Forms.TableLayoutPanel();
             this.Column4TLP = new System.Windows.Forms.TableLayoutPanel();
@@ -43,10 +43,10 @@
             this.Column5TLP = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.DeckPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile1)).BeginInit();
             this.SuspendLayout();
             // 
             // DeckPB
@@ -67,41 +67,45 @@
             this.CurrentPB.TabIndex = 24;
             this.CurrentPB.TabStop = false;
             // 
-            // pictureBox2
+            // SuitPile3
             // 
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Location = new System.Drawing.Point(592, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 118);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.SuitPile3.BackColor = System.Drawing.Color.White;
+            this.SuitPile3.Enabled = false;
+            this.SuitPile3.Location = new System.Drawing.Point(592, 12);
+            this.SuitPile3.Name = "SuitPile3";
+            this.SuitPile3.Size = new System.Drawing.Size(95, 118);
+            this.SuitPile3.TabIndex = 25;
+            this.SuitPile3.TabStop = false;
             // 
-            // pictureBox3
+            // SuitPile4
             // 
-            this.pictureBox3.Enabled = false;
-            this.pictureBox3.Location = new System.Drawing.Point(693, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 118);
-            this.pictureBox3.TabIndex = 26;
-            this.pictureBox3.TabStop = false;
+            this.SuitPile4.BackColor = System.Drawing.Color.White;
+            this.SuitPile4.Enabled = false;
+            this.SuitPile4.Location = new System.Drawing.Point(693, 12);
+            this.SuitPile4.Name = "SuitPile4";
+            this.SuitPile4.Size = new System.Drawing.Size(95, 118);
+            this.SuitPile4.TabIndex = 26;
+            this.SuitPile4.TabStop = false;
             // 
-            // pictureBox4
+            // SuitPile2
             // 
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Location = new System.Drawing.Point(491, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(95, 118);
-            this.pictureBox4.TabIndex = 27;
-            this.pictureBox4.TabStop = false;
+            this.SuitPile2.BackColor = System.Drawing.Color.White;
+            this.SuitPile2.Enabled = false;
+            this.SuitPile2.Location = new System.Drawing.Point(491, 12);
+            this.SuitPile2.Name = "SuitPile2";
+            this.SuitPile2.Size = new System.Drawing.Size(95, 118);
+            this.SuitPile2.TabIndex = 27;
+            this.SuitPile2.TabStop = false;
             // 
-            // pictureBox5
+            // SuitPile1
             // 
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Location = new System.Drawing.Point(390, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(95, 118);
-            this.pictureBox5.TabIndex = 28;
-            this.pictureBox5.TabStop = false;
+            this.SuitPile1.BackColor = System.Drawing.Color.White;
+            this.SuitPile1.Enabled = false;
+            this.SuitPile1.Location = new System.Drawing.Point(390, 12);
+            this.SuitPile1.Name = "SuitPile1";
+            this.SuitPile1.Size = new System.Drawing.Size(95, 118);
+            this.SuitPile1.TabIndex = 28;
+            this.SuitPile1.TabStop = false;
             // 
             // Column1TLP
             // 
@@ -286,20 +290,20 @@
             this.Controls.Add(this.Column3TLP);
             this.Controls.Add(this.Column2TLP);
             this.Controls.Add(this.Column1TLP);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.SuitPile1);
+            this.Controls.Add(this.SuitPile2);
+            this.Controls.Add(this.SuitPile4);
+            this.Controls.Add(this.SuitPile3);
             this.Controls.Add(this.CurrentPB);
             this.Controls.Add(this.DeckPB);
             this.Name = "SolitaireForm";
             this.Text = "Solitaire";
             ((System.ComponentModel.ISupportInitialize)(this.DeckPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuitPile1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,10 +313,10 @@
 
         private System.Windows.Forms.PictureBox DeckPB;
         private System.Windows.Forms.PictureBox CurrentPB;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox SuitPile3;
+        private System.Windows.Forms.PictureBox SuitPile4;
+        private System.Windows.Forms.PictureBox SuitPile2;
+        private System.Windows.Forms.PictureBox SuitPile1;
         private System.Windows.Forms.TableLayoutPanel Column1TLP;
         private System.Windows.Forms.TableLayoutPanel Column2TLP;
         private System.Windows.Forms.TableLayoutPanel Column4TLP;
