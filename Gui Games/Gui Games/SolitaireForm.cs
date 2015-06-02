@@ -29,6 +29,11 @@ namespace Gui_Games
             InitializeComponent();
             setupForm();
         }
+
+        /// <summary>
+        /// Sets up the form from scratch, including the solitaire class
+        /// all panels and variables
+        /// </summary>
         public void setupForm()
         {
             PlayPilesPB1 = new PictureBox[maxNumberOfCards];
@@ -43,6 +48,10 @@ namespace Gui_Games
             CurrentPB.Image = Images.GetCardImage(Solitaire.GetCurrent().GetLastCardInPile());
             RefreshScreen();
         }
+
+        /// <summary>
+        /// Runs all the code to refresh all picture boxes and play board
+        /// </summary>
         private void RefreshScreen()
         {
             UpdatePlayPiles1();
@@ -421,7 +430,7 @@ namespace Gui_Games
             int handSize = hand.GetCount();
             for (int i = 0; i < handSize; i++)
             {
-                PlayBoard7.Controls.Add(PlayPilesPB1[i]);
+                PlayBoard7.Controls.Add(PlayPilesPB7[i]);
             }
         }
 
