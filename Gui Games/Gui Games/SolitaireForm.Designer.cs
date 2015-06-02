@@ -118,7 +118,7 @@
             this.PlayBoard1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard1.Location = new System.Drawing.Point(12, 241);
+            this.PlayBoard1.Location = new System.Drawing.Point(12, 136);
             this.PlayBoard1.Name = "PlayBoard1";
             this.PlayBoard1.RowCount = 13;
             this.PlayBoard1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -148,7 +148,7 @@
             this.PlayBoard2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard2.Location = new System.Drawing.Point(113, 241);
+            this.PlayBoard2.Location = new System.Drawing.Point(113, 136);
             this.PlayBoard2.Name = "PlayBoard2";
             this.PlayBoard2.RowCount = 13;
             this.PlayBoard2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -178,7 +178,7 @@
             this.PlayBoard4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard4.Location = new System.Drawing.Point(315, 241);
+            this.PlayBoard4.Location = new System.Drawing.Point(315, 136);
             this.PlayBoard4.Name = "PlayBoard4";
             this.PlayBoard4.RowCount = 13;
             this.PlayBoard4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -209,7 +209,7 @@
             this.PlayBoard3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard3.Location = new System.Drawing.Point(214, 241);
+            this.PlayBoard3.Location = new System.Drawing.Point(214, 136);
             this.PlayBoard3.Name = "PlayBoard3";
             this.PlayBoard3.RowCount = 13;
             this.PlayBoard3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -239,7 +239,7 @@
             this.PlayBoard7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard7.Location = new System.Drawing.Point(618, 241);
+            this.PlayBoard7.Location = new System.Drawing.Point(618, 136);
             this.PlayBoard7.Name = "PlayBoard7";
             this.PlayBoard7.RowCount = 13;
             this.PlayBoard7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -269,7 +269,7 @@
             this.PlayBoard6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard6.Location = new System.Drawing.Point(517, 241);
+            this.PlayBoard6.Location = new System.Drawing.Point(517, 136);
             this.PlayBoard6.Name = "PlayBoard6";
             this.PlayBoard6.RowCount = 13;
             this.PlayBoard6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
@@ -299,7 +299,7 @@
             this.PlayBoard5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.PlayBoard5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.PlayBoard5.Location = new System.Drawing.Point(416, 241);
+            this.PlayBoard5.Location = new System.Drawing.Point(416, 136);
             this.PlayBoard5.Name = "PlayBoard5";
             this.PlayBoard5.RowCount = 13;
             this.PlayBoard5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));

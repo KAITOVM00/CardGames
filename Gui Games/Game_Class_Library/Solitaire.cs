@@ -63,7 +63,7 @@ namespace Game_Class_Library
         /// </summary>
         /// <param name="index">Pre: index between 0 and 6</param>
         /// <returns>Hand: Returns the hand of corresponding index</returns>
-        public static Hand GetPlayHands(int index)
+        public static Hand GetPlayHand(int index)
         {
             return playHands[index];
         }
