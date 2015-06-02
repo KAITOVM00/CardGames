@@ -15,7 +15,7 @@ namespace Game_Class_Library
     public static class Solitaire
     {
         static CardPile deck; //to hold the draw deck
-        static CardPile current; //to hold the discard deck
+        static CardPile current = new CardPile(); //to hold the discard deck
         
         //Suit piles for win condition
         static Card SuitPile1;
@@ -42,9 +42,16 @@ namespace Game_Class_Library
             for (int i = 0; i < numOfPlayerPiles; i++)
             {
                 playRevealed[i] = i;
-                playHands[i] = new Hand(deck.DealCards(i+1));
+                Hand temp = new Hand(deck.DealCards(i + 1));
+                playHands.Add(temp);
             }
             current.AddCard(deck.DealOneCard());
+        }
+
+
+        public static CardPile GetCurrent()
+        {
+            return current;
         }
         public static int[] GetRevealed()
         {
@@ -87,7 +94,10 @@ namespace Game_Class_Library
             }
             if (moveFrom != moveFromNotSet)
             {
+                for (int i = cardIndex; i < playHands[move].GetCount(); i++)
+                {
 
+                }
             }
             return false;
         }

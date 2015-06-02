@@ -15,28 +15,25 @@ namespace Gui_Games
 {
     public partial class SolitaireForm : Form
     {
-        PictureBox[] PlayPilesPB1;
-        PictureBox[] PlayPilesPB2;
-        PictureBox[] PlayPilesPB3;
-        PictureBox[] PlayPilesPB4;
-        PictureBox[] PlayPilesPB5;
-        PictureBox[] PlayPilesPB6;
-        PictureBox[] PlayPilesPB7;
- 
+        PictureBox[][] PlayPilesPB;
+
         public SolitaireForm()
         {
             InitializeComponent();
+            setupForm();
         }
         public void setupForm()
         {
             DeckPB.Image = Images.GetBackOfCardImage();
+            Solitaire.SetupGame();
+            CurrentPB.Image = Images.GetCardImage(Solitaire.GetCurrent().GetLastCardInPile());
         }
-        private void UpdatePlayPiles1()
+        private void UpdatePlayPiles()
         {
             PictureBox pBox;
             int[] revealed = Solitaire.GetRevealed();
             int numPiles = revealed.Length;
-            List<Hand> piles = Solitaire.GetPlayPiles();
+            List<Hand> piles = Solitaire.GetAllPlayHands();
             for (int i = 0; i < numPiles; i++)
             {
                 int pileLength = piles[i].GetCount();
@@ -54,9 +51,9 @@ namespace Gui_Games
                     {
                         Card card = piles[i].GetCard(j);
                         pBox.Image = Images.GetCardImage(card);
-                        PlayPilesPB1[i] = pBox;
-                        PlayPilesPB1[i].Click += new EventHandler(PlayPBox1_Click);
-                        PlayPilesPB1[i].Tag = Solitaire.GetPlayPiles()[i].GetCard(j);//Crazy_Eights_Game.GetPlayerHand().GetCard(i);
+                        PlayPilesPB[i][j] = pBox;
+                        PlayPilesPB[i][j].Click += new EventHandler(PlayPBox1_Click);
+                        PlayPilesPB[i][j].Tag = Solitaire.GetAllPlayHands()[i].GetCard(j);//Crazy_Eights_Game.GetPlayerHand().GetCard(i);
                     }
                 }
             }
