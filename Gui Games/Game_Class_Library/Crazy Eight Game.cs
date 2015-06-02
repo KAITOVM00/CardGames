@@ -336,5 +336,31 @@ namespace Game_Class_Library
             }
             return false;
         }
+
+        public static int IsEndGame()
+        {
+            int ongoing = 2;
+            int loss = -1;
+            int win = 1;
+            int tie = 0;
+            if (playerHand.GetCount() == 0)
+            {
+                return win;
+            }
+            else if (compHand.GetCount() == 0)
+            {
+                return loss;
+            }
+            else if ((compHand.GetCount() == 13) && (playerHand.GetCount() == 13))
+            {
+                bool checkPlayer = CheckAllLegalMoves(playerHand);
+                bool checkComp = CheckAllLegalMoves(compHand);
+                if (!checkPlayer && !checkComp)
+                {
+                    return tie;
+                }
+            }
+            return ongoing;
+        }
     }//end class
 }

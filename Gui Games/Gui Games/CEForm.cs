@@ -30,6 +30,9 @@ namespace Gui_Games
         string dealText = "Click Deal to start the game \n ";
         string wrongCard = "Please select a Legal move to \n play";
         string canDrawText = "It is possible to make a move\n Please make a selection";
+        string lossText = "The computer is victorious, thanks\n for playing";
+        string victoryText = "You have won, congratulations.\n thanks for playing";
+        string tieText = "Tie Game, thanks for playing\n ";
         public CEForm()
         {
             InitializeComponent();
@@ -61,6 +64,7 @@ namespace Gui_Games
             DisplayCHand();
             UpdateDeck();
             UpdateDiscard();
+            EndGame();
         }
 
         /// <summary>
@@ -154,7 +158,6 @@ namespace Gui_Games
                 }
                 Crazy_Eights_Game.PlayerTurn(Selected,card);
                 Crazy_Eights_Game.ComputerTurn();
-                RefreshScreen();
             }
             else
             {
@@ -164,13 +167,15 @@ namespace Gui_Games
 
                     Crazy_Eights_Game.ComputerTurn();
                     InstructionText.Text = yourTurnText;
-                    RefreshScreen();
+  
                 }
                 else //If no card is played, change instruction text
                 {
                     InstructionText.Text = wrongCard;
                 }
+
             }
+            RefreshScreen();
         }
 
         /// <summary>
@@ -227,9 +232,39 @@ namespace Gui_Games
             {
                 InstructionText.Text = canDrawText;
             }
-            Crazy_Eights_Game.DeckDiscardSwap();
+            if (canDraw)
+            {
+                Crazy_Eights_Game.DeckDiscardSwap();
+                Crazy_Eights_Game.ComputerTurn();
+            }
+            Crazy_Eights_Game.DeckDiscardSwap(); //in case computer draws and now resets deck
             RefreshScreen();
-            MessageBox.Show(Crazy_Eights_Game.GetDeck().GetCount().ToString());
+        }
+        /// <summary>
+        /// Changes the windows form based on the victory condition. Calling
+        /// end game check and if it results.
+        /// </summary>
+        private void EndGame()
+        {
+            int loss = -1;
+            int win = 1;
+            int tie = 0;
+            int victory = Crazy_Eights_Game.IsEndGame();
+            if (victory == loss)
+            {
+                this.Enabled = false;
+                InstructionText.Text = lossText;
+            }
+            else if (victory == tie)
+            {
+                this.Enabled = false;
+                InstructionText.Text = tieText;
+            }
+            else if (victory == win)
+            {
+                this.Enabled = false;
+                InstructionText.Text = victoryText;
+            }            
         }
     }
 }
