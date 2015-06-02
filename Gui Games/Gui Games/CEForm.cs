@@ -13,13 +13,23 @@ using Game_Class_Library;
 
 namespace Gui_Games
 {
+    /// <summary>
+    /// Contains the Form methods and variables to be used in conjunction
+    /// with the Crazy Eights Game library for the Crazy Eights Game
+    /// 
+    /// Authors: Nathan Perkins
+    /// Date: 01/06/2015
+    /// </summary>
     public partial class CEForm : Form
     {
-        PictureBox[] playerPBox;
-        PictureBox[] computerPBox;
+        PictureBox[] playerPBox; //picture boxes for player cards
+        PictureBox[] computerPBox; //pictures boxes for computer cards
+
+        //Strings required for instruction text
         string yourTurnText = "Your turn. Click to place\n a card";
         string dealText = "Click Deal to start the game \n ";
         string wrongCard = "Please select a Legal move to \n play";
+        string canDrawText = "It is possible to make a move\n Please make a selection";
         public CEForm()
         {
             InitializeComponent();
@@ -30,11 +40,18 @@ namespace Gui_Games
 
 
         }
+        /// <summary>
+        /// Loads the back of card image to the deck as a setup for the game
+        /// </summary>
         private void SetupDeck()
         {
 
             DeckPB.Image = Images.GetBackOfCardImage();
         }
+
+        /// <summary>
+        /// Refreshes all the images based on current hands, deck and discard piles
+        /// </summary>
         private void Refresh()
         {
             UpdatePHand();
@@ -44,6 +61,11 @@ namespace Gui_Games
             UpdateDeck();
             UpdateDiscard();
         }
+
+        /// <summary>
+        /// Updates the pictureboxes for the player with images for current
+        /// players hand
+        /// </summary>
         private void UpdatePHand()
         {
             PictureBox pBox;
@@ -62,6 +84,10 @@ namespace Gui_Games
             }
 
         }
+        /// <summary>
+        /// updates picture boxes for the computer based on the current
+        /// computers hand
+        /// </summary>
         private void UpdateCHand()
         {
             PictureBox pBox;
@@ -77,6 +103,11 @@ namespace Gui_Games
                 computerPBox[i] = pBox;
             }
         }
+
+        /// <summary>
+        /// Loads and displays the pictureboxes into the computer table layout
+        /// panel
+        /// </summary>
         private void DisplayCHand()
         {
             CompPanel.Controls.Clear();
@@ -87,6 +118,11 @@ namespace Gui_Games
                 CompPanel.Controls.Add(computerPBox[i]);
             }
         }
+
+        /// <summary>
+        /// Loads and displays the pictureboxes into the player table layout
+        /// panel
+        /// </summary>
         private void DisplayPHand()
         {
             PlayerPanel.Controls.Clear();
@@ -97,13 +133,16 @@ namespace Gui_Games
                 PlayerPanel.Controls.Add(playerPBox[i]);
             }
         }
+
         private void PlayerPBox_Click(object sender, EventArgs e)
         {
+            //Get the selected card from the picture box
             int whichCard;
             PictureBox whichClicked = (PictureBox)sender;
-            whichCard = Crazy_Eights_Game.WhichCard((Card)whichClicked.Tag);
+            whichCard = Crazy_Eights_Game.WhichCard((Card)whichClicked.Tag); 
             Card Selected = Crazy_Eights_Game.GetPlayerHand().GetCard(whichCard);
-            if (Crazy_Eights_Game.IsEight(Selected))
+            
+            if (Crazy_Eights_Game.IsEight(Selected)) //If the selected card is an eight, load suit selection form
             {
                 SuitSelection suitSelection = new SuitSelection();
                 DialogResult result = suitSelection.ShowDialog();
@@ -113,30 +152,40 @@ namespace Gui_Games
                     card = suitSelection.GetSelection();
                 }
                 Crazy_Eights_Game.PlayerTurn(Selected,card);
+                Crazy_Eights_Game.ComputerTurn();
                 Refresh();
             }
             else
             {
                 bool check = Crazy_Eights_Game.PlayerTurn(Selected);
-                if (check)
+                if (check) //
                 {
 
                     Crazy_Eights_Game.ComputerTurn();
                     InstructionText.Text = yourTurnText;
                     Refresh();
                 }
-                else
+                else //If no card is played, change instruction text
                 {
                     InstructionText.Text = wrongCard;
                 }
             }
         }
+
+        /// <summary>
+        /// Updates the Discard deck and displays the new images
+        /// </summary>
         private void UpdateDiscard()
         {
             Card card = Crazy_Eights_Game.GetTopOfDiscard();
             DiscardPB.Image = Images.GetCardImage(card);
             //check current top of discard pile and set picturebox to that card
         }
+
+        /// <summary>
+        /// Checks if the deck is out of cards and tells crazy eights class
+        /// to swap if so
+        /// </summary>
         private void UpdateDeck()
         {
             Crazy_Eights_Game.DeckDiscardSwap();
@@ -149,8 +198,10 @@ namespace Gui_Games
 
         }
 
+
         private void DealBtn_Click(object sender, EventArgs e)
         {
+            DeckPB.Enabled = true;
             Crazy_Eights_Game.SetupGame();
             DealBtn.Enabled = false;
             SortBtn.Enabled = true;
@@ -167,6 +218,18 @@ namespace Gui_Games
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DeckPB_Click(object sender, EventArgs e)
+        {
+            bool canDraw = Crazy_Eights_Game.AddFromDeck();
+            if (!canDraw)
+            {
+                InstructionText.Text = canDrawText;
+            }
+            Crazy_Eights_Game.DeckDiscardSwap();
+            Refresh();
+            MessageBox.Show(Crazy_Eights_Game.GetDeck().GetCount().ToString());
         }
     }
 }

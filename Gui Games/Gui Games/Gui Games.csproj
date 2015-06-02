@@ -57,6 +57,12 @@
       <DependentUpon>CEForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Images.cs" />
+    <Compile Include="SolitaireForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolitaireForm.Designer.cs">
+      <DependentUpon>SolitaireForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Start_Game_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <EmbeddedResource Include="CEForm.resx">
       <DependentUpon>CEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolitaireForm.resx">
+      <DependentUpon>SolitaireForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start_Game_Form.resx">
       <DependentUpon>Start_Game_Form.cs</DependentUpon>

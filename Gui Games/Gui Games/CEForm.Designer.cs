@@ -102,11 +102,13 @@
             // 
             // DeckPB
             // 
+            this.DeckPB.Enabled = false;
             this.DeckPB.Location = new System.Drawing.Point(165, 192);
             this.DeckPB.Name = "DeckPB";
             this.DeckPB.Size = new System.Drawing.Size(95, 118);
             this.DeckPB.TabIndex = 22;
             this.DeckPB.TabStop = false;
+            this.DeckPB.Click += new System.EventHandler(this.DeckPB_Click);
             // 
             // InstructionText
             // 
