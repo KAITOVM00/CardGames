@@ -35,6 +35,15 @@ namespace Gui_Games
 
             DeckPB.Image = Images.GetBackOfCardImage();
         }
+        private void Refresh()
+        {
+            UpdatePHand();
+            DisplayPHand();
+            UpdateCHand();
+            DisplayCHand();
+            UpdateDeck();
+            UpdateDiscard();
+        }
         private void UpdatePHand()
         {
             PictureBox pBox;
@@ -96,20 +105,25 @@ namespace Gui_Games
             Card Selected = Crazy_Eights_Game.GetPlayerHand().GetCard(whichCard);
             if (Crazy_Eights_Game.IsEight(Selected))
             {
-                Crazy_Eights_Game.PlayerTurn(Selected);
-                Crazy_Eights_Game.SetLegalMove(Selected);
+                SuitSelection suitSelection = new SuitSelection();
+                DialogResult result = suitSelection.ShowDialog();
+                Card card = new Card();
+                if (result == DialogResult.OK)
+                {
+                    card = suitSelection.GetSelection();
+                }
+                Crazy_Eights_Game.PlayerTurn(Selected,card);
+                Refresh();
             }
             else
             {
                 bool check = Crazy_Eights_Game.PlayerTurn(Selected);
                 if (check)
                 {
-                    UpdateDiscard();
-                    UpdatePHand();
-                    DisplayPHand();
+
                     Crazy_Eights_Game.ComputerTurn();
                     InstructionText.Text = yourTurnText;
-
+                    Refresh();
                 }
                 else
                 {
@@ -140,19 +154,14 @@ namespace Gui_Games
             Crazy_Eights_Game.SetupGame();
             DealBtn.Enabled = false;
             SortBtn.Enabled = true;
-            UpdatePHand();
-            DisplayPHand();
-            UpdateCHand();
-            DisplayCHand();
-            UpdateDiscard();
+            Refresh();
             InstructionText.Text = yourTurnText;
         }
 
         private void SortBtn_Click(object sender, EventArgs e)
         {
             Crazy_Eights_Game.SortPlayerHand();
-            UpdatePHand();
-            DisplayPHand();
+            Refresh();
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)

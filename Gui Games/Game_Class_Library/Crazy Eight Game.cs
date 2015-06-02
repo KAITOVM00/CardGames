@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shared_Game_Class_Library;
+using System.Threading;
 
 namespace Game_Class_Library
 {
@@ -15,6 +16,12 @@ namespace Game_Class_Library
         static Hand playerHand;
         static Hand compHand;
         static Card LegalMove;
+
+        const int CLUBS = 3;
+        const int HEARTS = 1;
+        const int DIAMONDS = 2;
+        const int SPADES = 0;
+
         public static void SetupGame()
         {
             deck = new CardPile(true);
@@ -61,9 +68,9 @@ namespace Game_Class_Library
         {
             playerHand.RemoveCard(card);
         }
-        public static void RemoveCardComputer(int index)
+        public static void RemoveCardComputer(Card card)
         {
-            compHand.RemoveCardAt(index);
+            compHand.RemoveCard(card);
         }
         public static void AddDiscard(Card card)
         {
@@ -71,7 +78,11 @@ namespace Game_Class_Library
         }
         public static bool CheckLegalMove(Card card)
         {
-            if (card.GetSuit() == LegalMove.GetSuit())
+            if (card.GetFaceValue() == FaceValue.Eight)
+            {
+                return true;
+            }
+            else if (card.GetSuit() == LegalMove.GetSuit())
             {
                 return true;
             }
@@ -115,9 +126,98 @@ namespace Game_Class_Library
         }
         public static void ComputerTurn()
         {
-            
+            int msDelay = 1000;
+            Thread.Sleep(msDelay);
+            bool draw = LegalCompTurn();
+            if (draw)
+            {
+                compHand.AddCard(deck.DealOneCard());
+            }
+            else
+            {
+                Card card = BestCompCard();
+                CompCardToDiscard(card);
+            }
         }
-        private static bool CheckTieGame()
+        /// <summary>
+        /// BestCompCard finds the best card for a computer to play, prioritzing facevalue first
+        /// suit second, and then finally any 8's the computer might have
+        /// </summary>
+        /// <returns>Card: Returns the best card for the computer to play</returns>
+        private static Card BestCompCard()
+        {
+            Card card;
+            Card topOfPile = discard.GetLastCardInPile();
+            for (int i = 0; i < compHand.GetCount(); i++)
+            {
+                card = compHand.GetCard(i);
+                bool sameFace = card.GetFaceValue() == topOfPile.GetFaceValue();
+                bool notEight = card.GetFaceValue() != FaceValue.Eight;
+                if (sameFace && notEight)
+                {
+                    return card;
+                }
+            }
+            for (int i = 0; i < compHand.GetCount(); i++)
+            {
+                card = compHand.GetCard(i);
+                bool sameSuit = card.GetSuit() == topOfPile.GetSuit();
+                bool notEight = card.GetFaceValue() != FaceValue.Eight;
+                if (sameSuit && notEight)
+                {
+                    return card;
+                }
+            }
+            for (int i = 0; i < compHand.GetCount(); i++)
+            {
+                card = compHand.GetCard(i);
+                bool isEight = card.GetFaceValue() == FaceValue.Eight;
+                if (isEight)
+                {
+                    return card;
+                }
+            }
+            return new Card();
+        }
+        /// <summary>
+        /// LegalCompTurn checks if it is possible for the computer to play a 
+        /// card from it's hand.
+        /// </summary>
+        /// <returns>Bool: Returns true if not possible to play, false if otherwise</returns>
+        private static bool LegalCompTurn()
+        {
+            for (int i = 0; i < compHand.GetCount(); i++)
+            {
+                if(CheckLegalMove(compHand.GetCard(i)))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        /// <summary>
+        /// AddFromDeck checks if there is a legal move to be made from the player, and then
+        /// if no move is found, it adds a card from the deck.
+        /// </summary>
+        /// <returns>Bool: True if no legal move was found and a card is added, false otherwise</returns>
+        public static bool AddFromDeck()
+        {
+            bool check = false;
+            for (int i = 0;i<playerHand.GetCount();i++)
+            {
+                if(CheckLegalMove(playerHand.GetCard(i)))
+                {
+                    check = true;
+                }
+            }
+            if (!check)
+            {
+                playerHand.AddCard(deck.DealOneCard());
+                return true;
+            }
+            return false;
+        }
+        public static bool CheckTieGame()
         {
             return false;
         }
@@ -142,6 +242,18 @@ namespace Game_Class_Library
             }
             return false;
         }
+        public static bool PlayerTurn(Card card, Card newSuit)
+        {
+            bool check = CheckLegalMove(card);
+            if (check)
+            {
+                AddDiscard(card);
+                SetLegalMove(newSuit);
+                RemoveCardPlayer(card);
+                return true;
+            }
+            return false;
+        }
         public static bool IsEight(Card card)
         {
             if (card.GetFaceValue() == FaceValue.Eight)
@@ -150,6 +262,5 @@ namespace Game_Class_Library
             }
             return false;
         }
-
     }//end class
 }

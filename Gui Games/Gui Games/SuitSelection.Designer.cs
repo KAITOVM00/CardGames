@@ -33,6 +33,7 @@
             this.ClubsBtn = new System.Windows.Forms.RadioButton();
             this.DiamondsBtn = new System.Windows.Forms.RadioButton();
             this.SuitText = new System.Windows.Forms.Label();
+            this.OkBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SpadesBtn
@@ -46,6 +47,7 @@
             this.SpadesBtn.TabStop = true;
             this.SpadesBtn.Text = "Spades";
             this.SpadesBtn.UseVisualStyleBackColor = true;
+            this.SpadesBtn.CheckedChanged += new System.EventHandler(this.SpadesBtn_CheckedChanged);
             // 
             // HeartsBtn
             // 
@@ -56,6 +58,7 @@
             this.HeartsBtn.TabIndex = 1;
             this.HeartsBtn.Text = "Hearts";
             this.HeartsBtn.UseVisualStyleBackColor = true;
+            this.HeartsBtn.CheckedChanged += new System.EventHandler(this.HeartsBtn_CheckedChanged);
             // 
             // ClubsBtn
             // 
@@ -66,6 +69,7 @@
             this.ClubsBtn.TabIndex = 3;
             this.ClubsBtn.Text = "Clubs";
             this.ClubsBtn.UseVisualStyleBackColor = true;
+            this.ClubsBtn.CheckedChanged += new System.EventHandler(this.ClubsBtn_CheckedChanged);
             // 
             // DiamondsBtn
             // 
@@ -76,6 +80,7 @@
             this.DiamondsBtn.TabIndex = 2;
             this.DiamondsBtn.Text = "Diamonds";
             this.DiamondsBtn.UseVisualStyleBackColor = true;
+            this.DiamondsBtn.CheckedChanged += new System.EventHandler(this.DiamondsBtn_CheckedChanged);
             // 
             // SuitText
             // 
@@ -86,11 +91,23 @@
             this.SuitText.TabIndex = 4;
             this.SuitText.Text = "Please select your suit";
             // 
+            // OkBtn
+            // 
+            this.OkBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.OkBtn.Location = new System.Drawing.Point(70, 189);
+            this.OkBtn.Name = "OkBtn";
+            this.OkBtn.Size = new System.Drawing.Size(75, 23);
+            this.OkBtn.TabIndex = 5;
+            this.OkBtn.Text = "OK";
+            this.OkBtn.UseVisualStyleBackColor = true;
+            this.OkBtn.Click += new System.EventHandler(this.OkBtn_Click);
+            // 
             // SuitSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(259, 243);
+            this.Controls.Add(this.OkBtn);
             this.Controls.Add(this.SuitText);
             this.Controls.Add(this.ClubsBtn);
             this.Controls.Add(this.DiamondsBtn);
@@ -110,5 +127,6 @@
         private System.Windows.Forms.RadioButton ClubsBtn;
         private System.Windows.Forms.RadioButton DiamondsBtn;
         private System.Windows.Forms.Label SuitText;
+        private System.Windows.Forms.Button OkBtn;
     }
 }
