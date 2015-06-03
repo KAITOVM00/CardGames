@@ -137,6 +137,7 @@
             this.PlayerPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.PlayerPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.PlayerPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.PlayerPanel.Enabled = false;
             this.PlayerPanel.Location = new System.Drawing.Point(69, 339);
             this.PlayerPanel.Name = "PlayerPanel";
             this.PlayerPanel.RowCount = 1;

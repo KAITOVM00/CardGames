@@ -31,7 +31,8 @@ namespace GuiGames
 
         private static Bitmap backOfCardImage;
         private static Bitmap[,] cardImages;
-
+        private const int NUM_SUITS = 4;
+        private const int NUM_CARDS_PER_SUIT = 13;
 
         /// <summary>
         /// Constructor - Loads images from disk files.
@@ -41,7 +42,7 @@ namespace GuiGames
 
             // Load card images.
             backOfCardImage = Images.LoadImage("Cards", "CardBack_Red");
-            cardImages = new Bitmap[CardPile.NUM_SUITS, CardPile.NUM_CARDS_PER_SUIT];
+            cardImages = new Bitmap[NUM_SUITS, NUM_CARDS_PER_SUIT];
 
             for (Suit suit = Suit.Clubs; suit <= Suit.Spades; suit++)
             {

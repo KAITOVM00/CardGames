@@ -138,8 +138,23 @@ namespace Game_Class_Library
         /// <returns>Bool: Returns true if it is a legal move, false otherwise</returns>
         public static bool CheckLegalMove(Card card)
         {
+            int cardsAtInitial = 35; //if the face value is eight at the beginning of game, can play anything
+            int discardAtInitial = 1;
+            //This checks if it's the first turn of the game and it happens to be an 8 on the play, if so
+            //any move is possible
+            if (deck.GetCount() == cardsAtInitial)
+            {
+                if (discard.GetCount() == discardAtInitial)
+                {
+                    if (discard.GetLastCardInPile().GetFaceValue() == FaceValue.Eight)
+                    {
+                        return true;
+                    }
+                }
+            }
             if (card.GetFaceValue() == FaceValue.Eight)
             {
+
                 return true;
             }
             else if (card.GetSuit() == legalMove.GetSuit())
@@ -250,7 +265,6 @@ namespace Game_Class_Library
             return false;
         }
         
-
         /// <summary>
         /// Checks a given hand for any legal moves
         /// </summary>
@@ -337,6 +351,13 @@ namespace Game_Class_Library
             return false;
         }
 
+        /// <summary>
+        /// Checks if the game has ended in any way, whether through a Tie
+        /// or one of the competitors reaching no cards
+        /// </summary>
+        /// <returns>Int: Returns -1 if the game is lost for the player
+        /// 0 if the game is a tie, 1 if the game is won for the player
+        /// or 2 if the game is ongoing</returns>
         public static int IsEndGame()
         {
             int ongoing = 2;

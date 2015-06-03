@@ -29,11 +29,9 @@ namespace Game_Class_Library
         static List<Hand> playHands = new List<Hand>();
         static int[] playRevealed = new int[numOfHands];
         
-        //Chosen index of playHands, to be changed when player clicks a Hand
-        //-1 indicates that it's currently not selected
-        static int moveFromNotSet = -1;
-        static int moveFrom = moveFromNotSet;
-
+        //Selected is used in conjunction with the SetSelected method, which
+        //is called from the forms class. Selected is used to remember the 
+        //last selected card
         static Card selected = new Card();
         /// <summary>
         /// Sets up the solitare game from beginning 
@@ -57,7 +55,8 @@ namespace Game_Class_Library
         /// hand from pile to pile
         /// </summary>
         /// <param name="card">Pre: Must be an instantiated Card</param>
-        /// <returns>Bool: Returns true if a card was </returns>
+        /// <returns>Bool: Returns true if a card was moved, false if otherwise
+        /// </returns>
         public static bool SetSelected(Card card)
         {
             if (selected == null)
@@ -96,6 +95,18 @@ namespace Game_Class_Library
             return false;
         }
 
+        /// <summary>
+        /// Checks whether there's currently a card selected
+        /// </summary>
+        /// <returns>Bool: Returns true if card is selected, false otherwise</returns>
+        public static bool IsSelectedSet()
+        {
+            if (selected == null)
+            {
+                return false;
+            }
+                return true;
+        }
 
         /// <summary>
         /// Generates a hand from the piles, pile pHIndex and card cPIndex 
@@ -158,15 +169,24 @@ namespace Game_Class_Library
             return position;
         }
 
+        /// <summary>
+        /// GetCurrent returns the current discard deck
+        /// </summary>
+        /// <returns>CardPile: Returns the current discard deck</returns>
         public static CardPile GetCurrent()
         {
             return current;
         }
+
+        /// <summary>
+        /// Get's the current revealed cards locations
+        /// </summary>
+        /// <returns>Int[]: Returns an integer array with numbers >=0 
+        /// corresponding to the associated Hands currently revealed card</returns>
         public static int[] GetRevealed()
         {
             return playRevealed;
         }
-
 
         /// <summary>
         /// Returns a play pile corresponding to the 'Hand' of one of the 

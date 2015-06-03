@@ -246,8 +246,6 @@ namespace Shared_Game_Class_Library
     public class CardPile
     {
         private List<Card> pile = new List<Card>(); //list of cards
-        public const int NUM_SUITS = 4; //total number of suits
-        public const int NUM_CARDS_PER_SUIT = 13; //total number of cards
         Random random = new Random(); //random variable for shuffle
         
         /// <summary>

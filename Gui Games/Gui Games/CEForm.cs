@@ -158,6 +158,7 @@ namespace Gui_Games
                 }
                 Crazy_Eights_Game.PlayerTurn(Selected,card);
                 Crazy_Eights_Game.ComputerTurn();
+                InstructionText.Text = yourTurnText;
             }
             else
             {
@@ -206,6 +207,7 @@ namespace Gui_Games
 
         private void DealBtn_Click(object sender, EventArgs e)
         {
+            PlayerPanel.Enabled = true;
             DeckPB.Enabled = true;
             Crazy_Eights_Game.SetupGame();
             DealBtn.Enabled = false;
@@ -252,19 +254,26 @@ namespace Gui_Games
             int victory = Crazy_Eights_Game.IsEndGame();
             if (victory == loss)
             {
-                this.Enabled = false;
-                InstructionText.Text = lossText;
+                RestartGame();
+                MessageBox.Show(lossText);
             }
             else if (victory == tie)
             {
-                this.Enabled = false;
-                InstructionText.Text = tieText;
+                RestartGame();
+                MessageBox.Show(tieText);
             }
             else if (victory == win)
             {
-                this.Enabled = false;
-                InstructionText.Text = victoryText;
+                RestartGame();
+                MessageBox.Show(victoryText);
             }            
+        }
+
+        private void RestartGame()
+        {
+            DealBtn.Enabled = true;
+            SortBtn.Enabled = false;
+            PlayerPanel.Enabled = false;
         }
     }
 }

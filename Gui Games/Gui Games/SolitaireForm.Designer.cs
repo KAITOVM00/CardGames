@@ -66,6 +66,7 @@
             this.CurrentPB.Size = new System.Drawing.Size(95, 118);
             this.CurrentPB.TabIndex = 24;
             this.CurrentPB.TabStop = false;
+            this.CurrentPB.Click += new System.EventHandler(this.CurrentPB_Click);
             // 
             // SuitPile3
             // 

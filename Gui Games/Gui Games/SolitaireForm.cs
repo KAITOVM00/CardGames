@@ -28,7 +28,8 @@ namespace Gui_Games
         PictureBox[] PlayPilesPB6;
         PictureBox[] PlayPilesPB7;
         int maxNumberOfCards = 15;
-
+        string errorCard = "ERROR - Could not move that card here";
+        string errorDiscard = "ERROR - Card can not be placed on the discard";
         public SolitaireForm()
         {
             InitializeComponent();
@@ -135,8 +136,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
         }
 
         /// <summary>
@@ -193,8 +201,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
         }
 
         /// <summary>
@@ -251,8 +266,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
         }
 
         /// <summary>
@@ -309,8 +331,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
         }
 
         /// <summary>
@@ -367,8 +396,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            };
         }
 
         /// <summary>
@@ -425,8 +461,15 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            Solitaire.SetSelected(selected);
-            RefreshScreen();
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if (cardMoved)
+            {
+                RefreshScreen();
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
         }
 
         /// <summary>
@@ -483,9 +526,29 @@ namespace Gui_Games
             PictureBox whichClicked = (PictureBox)sender;
             whichCard = Solitaire.GetSelectedPosition((Card)whichClicked.Tag);
             MessageBox.Show(whichCard[1].ToString());
-            //Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
-            //Solitaire.SetSelected(selected);
-            //RefreshScreen();
+            Card selected = Solitaire.GetPlayHand(playBoxIndex).GetCard(whichCard[1]);
+            bool cardMoved = Solitaire.SetSelected(selected);
+            if(cardMoved)
+            {
+               RefreshScreen();   
+            }
+            else
+            {
+                MessageBox.Show(errorCard);
+            }
+        }
+
+        private void CurrentPB_Click(object sender, EventArgs e)
+        {
+            bool currentlySelected = Solitaire.IsSelectedSet();
+            if (currentlySelected)
+            {
+                MessageBox.Show(errorDiscard);
+            }
+            else
+            {
+                //draw function yet to be implemented
+            }
         }
     }
 }
