@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game_Class_Library", "Game_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared Game Class Library", "Shared Game Class Library\Shared Game Class Library.csproj", "{CA5F4B22-A161-4988-85D6-D3EA754E5DF5}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "GuiGamesUML", "GuiGamesUML\GuiGamesUML.modelproj", "{EFD64B11-998E-450C-82BF-78A4745B16AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{CA5F4B22-A161-4988-85D6-D3EA754E5DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA5F4B22-A161-4988-85D6-D3EA754E5DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA5F4B22-A161-4988-85D6-D3EA754E5DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD64B11-998E-450C-82BF-78A4745B16AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD64B11-998E-450C-82BF-78A4745B16AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD64B11-998E-450C-82BF-78A4745B16AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD64B11-998E-450C-82BF-78A4745B16AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

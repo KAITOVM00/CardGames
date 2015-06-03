@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-06-02T17:01:01" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library' -  (Package)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Medium" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game' -  (Class)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::AddFromDeck' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::BestCompCard' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CheckAllLegalMoves' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CheckAllLegalMoves::hand' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CheckLegalMove' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CheckLegalMove::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CheckTie' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::compHand' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CompPlayCard' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CompPlayCard::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::CompPlayCard::indexLoc' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::ComputerTurn' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::DealInitial' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::deck' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::DeckDiscardSwap' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::discard' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::GetComputerHand' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::GetDeck' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::GetDiscard' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::GetPlayerHand' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::GetTopOfDiscard' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::IsEight' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::IsEight::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::IsEndGame' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::legalMove' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::maxHandSize' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::playerHand' -  (Property)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::PlayerTurn' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::PlayerTurn::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::PlayerTurn::newSuit' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::SetLegalMove' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::SetLegalMove::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::SetupGame' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::SortPlayerHand' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::WhichCard' -  (Operation)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Game_Class_Library::Crazy_Eights_Game::WhichCard::card' -  (Parameter)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Shared_Game_Class_Library' -  (Package)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Shared_Game_Class_Library::Card' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Shared_Game_Class_Library::CardPile' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GuiGamesUML::Shared_Game_Class_Library::Hand' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-06-02T17:01:02" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

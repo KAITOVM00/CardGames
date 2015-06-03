@@ -22,7 +22,7 @@ namespace Game_Class_Library
         static CardPile discard; //to hold the discard deck
         static Hand playerHand; //holds the players hand
         static Hand compHand; //holds the computers hand
-        static Card LegalMove; //holds the current legal move, a phantom card that can be changed with wild cards
+        static Card legalMove; //holds the current legal move, a phantom card that can be changed with wild cards
         static int maxHandSize = 13; //maximum hand size
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Game_Class_Library
             int startHand = 8;
             playerHand = new Hand(deck.DealCards(startHand));
             compHand = new Hand(deck.DealCards(startHand));
-            LegalMove = discard.GetLastCardInPile();
+            legalMove = discard.GetLastCardInPile();
         }
 
         /// <summary>
@@ -142,11 +142,11 @@ namespace Game_Class_Library
             {
                 return true;
             }
-            else if (card.GetSuit() == LegalMove.GetSuit())
+            else if (card.GetSuit() == legalMove.GetSuit())
             {
                 return true;
             }
-            else if (card.GetFaceValue() == LegalMove.GetFaceValue())
+            else if (card.GetFaceValue() == legalMove.GetFaceValue())
             {
                 return true;
             }
@@ -195,7 +195,7 @@ namespace Game_Class_Library
             for (int i = 0; i < maxIndex; i++)
             {
                 Card comp = compHand.GetCard(i);
-                if (comp.GetFaceValue() == LegalMove.GetFaceValue())
+                if (comp.GetFaceValue() == legalMove.GetFaceValue())
                 {
                     CompPlayCard(comp, i);
                     return true;
@@ -204,7 +204,7 @@ namespace Game_Class_Library
             for (int i = 0; i < maxIndex; i++)
             {
                 Card comp = compHand.GetCard(i);
-                if (comp.GetSuit() == LegalMove.GetSuit())
+                if (comp.GetSuit() == legalMove.GetSuit())
                 {
                     CompPlayCard(comp, i);
                     return true;
@@ -283,7 +283,7 @@ namespace Game_Class_Library
         /// <param name="card">Pre: Must be an instantiated card</param>
         public static void SetLegalMove(Card card)
         {
-            LegalMove = card;
+            legalMove = card;
         }
 
         /// <summary>

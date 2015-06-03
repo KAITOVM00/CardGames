@@ -1,0 +1,2317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e426b8ef-a6ca-4839-a2cd-5929d53f1304"
+  name="Game_Class_Library"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0b9f3829-f703-4288-8ae8-cf3ad478f333"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGame_Class_Library"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d03cc013-bf3f-4535-9393-cb46e886c876"
+        name="Crazy_Eights_Game"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="02415f81-3f7f-4fee-8405-9c3184b74fcc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ae17534e-75f4-4d48-8015-72e5cbf44477"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae0ba8b8-b18a-415b-9518-fbc17d8172e4">
+                <propertyInstance
+                  Id="919fb165-fc10-479e-a25c-5aef8795fb5d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ea63b48-31b9-4d93-a207-fe925030c90f">
+                <propertyInstance
+                  Id="7aa53f64-28e5-477c-ba41-9bba3ba29ec6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9dc26299-d471-493c-8fe9-61709b89cdb7">
+                <propertyInstance
+                  Id="74218d3a-c873-4bf0-90fb-b1f5ab5c8a0f"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a88fe175-2bf1-44d6-b4a4-5ec8a589cf4f">
+                <propertyInstance
+                  Id="83f45bbf-33a7-4fa3-b4d5-bb1a7d332ac9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42b84d46-ee3c-4b99-9cc8-2c8333678b0b">
+                <propertyInstance
+                  Id="fa9249a3-f2ec-4f78-adff-ca80a5864cbc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dff60d22-794c-4315-a865-660f3f205484"
+            name="compHand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="639f6649-21e7-47d5-ad6d-2e1109d45d80"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DcompHand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d3cb9bff-4656-49f3-a4d9-bd59524e5dd8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f6487d3-c140-44f6-9285-531ad465b3f6">
+                    <propertyInstance
+                      Id="ec55e7c5-e7af-4922-a6d1-e1d98ba38528"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="202d660d-6815-4053-b9fd-7a14f52380e2">
+                    <propertyInstance
+                      Id="0fd11a0b-9076-4ed8-a069-5f2563b13e85"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60918ad1-4cf9-4067-a4b3-f9557fba5e0d">
+                    <propertyInstance
+                      Id="1574f97f-dfe9-4f5d-a06c-da74a78b5e74"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12b8b94c-ca56-4004-8bb0-c128654935bb">
+                    <propertyInstance
+                      Id="6d286392-c41d-443a-bdc4-7a82a664e386"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="235cd307-a23d-4076-a2f0-bebea6fce57a">
+                    <propertyInstance
+                      Id="47555887-0ad9-4179-a0f4-4e6463586812"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+                LastKnownName="Hand"
+                LastKnownLocation="Package1_1701.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60c1c186-7a2f-44c8-91d6-6a85107970df"
+            name="deck"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="51be3e0c-4b89-480d-b3f4-4f0a0210cbfe"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3Ddeck"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="072c2281-f56a-4c56-8d13-c3c0cd78580f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b37af751-cc1f-4af2-bd70-cb5c0cb12145">
+                    <propertyInstance
+                      Id="90295c52-6bc4-4671-b696-111baadeb0c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aa31a7e-2c87-44d4-8189-2e01e7eeaeab">
+                    <propertyInstance
+                      Id="0d01b8ab-0f5f-4bf0-b632-fb51894c889f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2371da03-7e62-4b46-b66f-d4dfa09f9c6e">
+                    <propertyInstance
+                      Id="96c45b98-adf9-4107-9c2b-1c9c29e998d3"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="075b97b7-6cc6-43ec-8763-48f860be6951">
+                    <propertyInstance
+                      Id="6bdce980-47f3-4366-8b2f-06e02b7ce2ae"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a46dc835-b36f-40c4-a366-8a71d4a1d46a">
+                    <propertyInstance
+                      Id="7ec8f7f1-bdf9-4001-9074-dfeb2d898678"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4528411a-0754-46dd-a10f-d1bfa14137e0"
+                LastKnownName="CardPile"
+                LastKnownLocation="Package1_1701.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3432d95e-41e6-4487-9281-7cfe6da21136"
+            name="discard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4105aac2-794e-46b9-998d-eba7f599e14f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3Ddiscard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f3cd712-3bdd-4bca-8413-a9adaff6cd89"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f06688b8-6cca-4707-b1a7-dcc6dfa425bb">
+                    <propertyInstance
+                      Id="066c8612-587a-4325-baf9-1b180195e6a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc2920e2-5d4a-4860-bf49-2eff6390d0ef">
+                    <propertyInstance
+                      Id="e51a8976-7e07-4202-8e54-a6f47824ae16"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac02241c-58f0-414c-a5bf-12512c87e9fe">
+                    <propertyInstance
+                      Id="cf2c1485-b692-4387-afb2-cd64421919ee"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bebd0040-7fdc-4343-9bfd-7e63e6848772">
+                    <propertyInstance
+                      Id="b57f4e04-fe8e-4f5d-9f3c-ff34c22420a9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b68e243-154a-496a-a2b3-bb9f148f9a5d">
+                    <propertyInstance
+                      Id="a3439c58-e4a0-48eb-b638-1d876bf033e2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4528411a-0754-46dd-a10f-d1bfa14137e0"
+                LastKnownName="CardPile"
+                LastKnownLocation="Package1_1701.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cd0bdb33-7547-4e63-b1f4-ff7642cfee3b"
+            name="legalMove"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d01bcf63-045b-4471-974d-fb7e5677b731"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DlegalMove"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7718fa93-9677-406c-a14a-690f74a289dc"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d4d1d98-b54e-47aa-b9e1-347851e28359">
+                    <propertyInstance
+                      Id="d9880578-d18b-4813-a367-3563e17579eb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b94ccc4a-c206-4e49-bb2d-4142b06416c6">
+                    <propertyInstance
+                      Id="e78629bb-9214-4f0d-bbfe-b98517a65981"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39df881a-f211-4492-8815-ad2740614beb">
+                    <propertyInstance
+                      Id="4c83f8cd-eb57-4a7e-a651-a90817ac8a8b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b501b3a5-444c-46a8-85ef-6adb50c6815d">
+                    <propertyInstance
+                      Id="79a038b4-bb0a-4d1f-a238-159ca532656c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="430391dc-d0e9-4e7e-8ed3-0d50a4599dc3">
+                    <propertyInstance
+                      Id="858bac31-cf82-4f0a-a728-f6a6401c4a66"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                LastKnownName="Card"
+                LastKnownLocation="Package1_1701.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="90c2e434-fbd2-42a1-8291-0ec521f628a4"
+            name="maxHandSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ff51b620-8184-4a6f-8410-006fb54f55db"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DmaxHandSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b4562293-dbf6-426d-93f0-218e94981a4c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3753ae95-f474-40c4-91b0-a015ddf3bee9">
+                    <propertyInstance
+                      Id="2ffc1170-b859-4250-aaf8-ac7eafb403db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78c41ce7-9c13-4c17-81ab-aaef306c9269">
+                    <propertyInstance
+                      Id="4c0dc06e-4052-4359-9100-7e5350bc7f8b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeb2506f-5f2d-4f96-834f-c8a457ab329b">
+                    <propertyInstance
+                      Id="507bf162-3671-4e80-a6bc-c8317fad890d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bf34731-3476-4449-aecb-8efb6d6b1e9d">
+                    <propertyInstance
+                      Id="31d6df1c-735f-4914-a2ee-398a135b18da"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca94e7da-4d50-46c2-af3f-635af30e587b">
+                    <propertyInstance
+                      Id="59295b8d-9759-4d11-ada6-12414d45802e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="GuiGamesUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7e274e47-8982-443c-954d-d8a057233df2"
+            name="playerHand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b7625ade-6dc5-449f-856e-e56e524fa551"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DplayerHand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b0d490e5-f31e-4314-a559-6a1eba931f7f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6597a4b2-3833-42d0-8ecf-2a2d5bbac56a">
+                    <propertyInstance
+                      Id="46d4ddb5-41f4-46b3-8591-c97d4f0dd236"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15025502-df55-471e-81e7-7b74a5b24e32">
+                    <propertyInstance
+                      Id="7809f43a-f88f-4f90-95d2-decae0f49ce9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf2101db-7f8f-41c2-8bb7-1ef66bcfcbde">
+                    <propertyInstance
+                      Id="2837a027-447d-48b5-819e-137b398f8816"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59bdb6dd-26b5-4bf5-b0d0-cd58c5ddfdd8">
+                    <propertyInstance
+                      Id="2cdba9c7-1bb9-41f1-bc2e-b473b24fd1c0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba762bff-0bbf-4346-8920-9a3850b0e9fe">
+                    <propertyInstance
+                      Id="7461ae04-bce3-4b6e-91c5-46c14952d79c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+                LastKnownName="Hand"
+                LastKnownLocation="Package1_1701.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1485332f-9feb-4073-bbd3-b1533f2b5f62"
+            name="CheckAllLegalMoves"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4646122b-298e-4ce4-987e-dca3b65a84f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCheckAllLegalMoves OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DHand)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6116c99f-5891-4e3d-a65d-61198a88bbbc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4861424-96a9-4183-a304-2bf0c8f45d6e">
+                    <propertyInstance
+                      Id="b3938485-76a6-41a2-8af4-783ae4abbe05"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32d2224d-7c4e-49a4-94c4-c8e23c69a0f2">
+                    <propertyInstance
+                      Id="38802cee-85ee-49a3-8d31-a5348141369c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70526ac9-069b-4f7a-b4a8-bf5629c558ad">
+                    <propertyInstance
+                      Id="423e5836-c767-4ddd-8e50-2beb75d77897"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53fd5854-c453-48a1-aeb7-3fb0d5348e6c">
+                    <propertyInstance
+                      Id="2db3f4a9-6314-4a5f-96f4-d6ab24d74ad1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52ed5a67-6a02-475f-aa77-4959c40c9ba8">
+                    <propertyInstance
+                      Id="6a490a06-d481-45d0-80c8-48c439ffc742"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30f805b4-b488-440a-93dd-d8bae1e95c0d">
+                    <propertyInstance
+                      Id="f6396306-361f-4b8c-8558-d8e7aa75ccb2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a623277e-567f-4e12-aef3-0db8be10705f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2c8994f8-0c01-42fd-a174-d3a1309a6f0f"
+                  name="hand"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5797f678-f467-4d58-aa5b-d407fe689620"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCheckAllLegalMoves OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DHand)]) ParameterIdentifier%3Dhand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+                      LastKnownName="Hand"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="da719639-4b19-41f3-b092-7628578fbf0f"
+            name="CheckLegalMove"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f52f1a9c-b9ec-464b-8274-3d4b646c2ffe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCheckLegalMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="65cad9aa-66a1-4fc2-ace6-24dfd64ca000"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaa9b34d-1c7b-4983-b352-8bf398f62cb2">
+                    <propertyInstance
+                      Id="f19dfcfe-c51e-4ab3-bc1b-b833b0e49842"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2da29f3-9ebe-4b10-8c12-ad727bbc5f82">
+                    <propertyInstance
+                      Id="1e905710-1763-40d3-9ecb-291855234594"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca884a21-97a1-4534-9c32-fa8d551590cd">
+                    <propertyInstance
+                      Id="5e7e3476-07a8-4b22-81e6-dd37950153ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f23d6adb-84bc-403d-ae3f-473b62f2da18">
+                    <propertyInstance
+                      Id="eac5da46-2a9d-48e7-8b56-d97a171fb2b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="705b5636-0a15-4d70-af25-38564accdf5c">
+                    <propertyInstance
+                      Id="9a377e39-62d3-4cf4-a9e5-d117a47e0431"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd97c198-5da9-4ad8-b900-e749ebabcfbb">
+                    <propertyInstance
+                      Id="35163cd1-a38b-43d2-ae43-c6b6bf053c31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6eb6b78-9067-4c73-bce1-4db307201b91"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea4c6240-2ee0-42a7-9967-61845b4d5122"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e87455b7-4b46-4b7a-91a6-95c5fc4e69d9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCheckLegalMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b255bf06-b8b8-45e2-871d-93acee0a6196"
+            name="CompPlayCard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4c117e3c-1142-4ec7-92aa-f2da4430ebf3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCompPlayCard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0401be81-0028-490e-859d-4966723860dd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c978a0e-f9f6-4a05-947d-91021bbfc6bd">
+                    <propertyInstance
+                      Id="645865af-152e-4819-9d53-5717c663c28f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="978ffce4-ebe3-4600-8e56-5adf69fc10c6">
+                    <propertyInstance
+                      Id="cbeb079d-947e-48c8-8a96-ffcfd4998382"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74877db0-96f9-40db-b7f9-3d63ed25cbde">
+                    <propertyInstance
+                      Id="8eaf6e09-a4b9-47d6-ad00-d5ff4f8e2885"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18210a79-efd3-4964-8164-4e532cbef9ea">
+                    <propertyInstance
+                      Id="261c69e4-00e2-4009-8525-09c205e408fd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25966882-9b7b-467e-9ee2-f68cb4e75e84">
+                    <propertyInstance
+                      Id="7cbd1912-30ac-4d3e-8b7e-5e050af120b8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1776bbe7-56e4-4253-a4f2-f3f23805725e">
+                    <propertyInstance
+                      Id="38547608-df20-49c1-9c83-849fe3b9e893"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc0e9cd9-2d73-422f-862f-b49a9c949606"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="61e1b81b-b40e-4937-b01b-cc40f6172bf2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCompPlayCard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc0c9119-6d6d-4931-9a98-dc13a3c37d5f"
+                  name="indexLoc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="823fe27b-77a0-4704-b913-f82848145f91"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DCompPlayCard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DindexLoc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f6ba1fb9-a44d-4ea3-8342-9100399d5ebb"
+            name="IsEight"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6da690c9-793d-4467-b415-975e43041f37"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DIsEight OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7724e75e-a48f-4bf5-b95d-6538fe86b238"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25d90601-632e-4eb3-8de1-e0d5df0e0c0d">
+                    <propertyInstance
+                      Id="69642c98-99c4-41dd-a02b-2dd3c7f269fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c32e33a-74fc-4abe-85dd-8b1b4f39609a">
+                    <propertyInstance
+                      Id="631688b7-e4a1-443c-952d-7a27b68211ae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a143c793-ff91-48b6-b7b8-0fecbad24f99">
+                    <propertyInstance
+                      Id="fa896480-374d-41a4-923f-6fae7866a902"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c06cfe6-a568-486f-a297-5601e47d4947">
+                    <propertyInstance
+                      Id="69a43df9-76b4-4b1e-bf49-187588eb8b11"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d968658-6a9c-445c-ae7b-1a60109046ee">
+                    <propertyInstance
+                      Id="1b026af7-03f1-4b39-96b2-1fa7959d1b5d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ea3bd77-e8d8-45d2-a50b-bf6c152471ae">
+                    <propertyInstance
+                      Id="a3956cfc-02e1-464b-9aea-f937e2c21e10"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a21c1fd2-cdda-4df3-b42b-bb297ae37387"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46af2b27-70ae-4a04-acf7-2f8faff510e3"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0cea7a86-33c3-4f52-bf95-9f3dcade0ddb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DIsEight OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4f406306-2fef-4f23-a1e5-f9e9f50c07af"
+            name="PlayerTurn"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="68171375-a506-4866-b9cd-70220f58c9d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DPlayerTurn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="12d86ac1-3ab7-4141-9c91-af3434a3e41f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff7f8eaf-fc94-4dc7-9985-9727a770321f">
+                    <propertyInstance
+                      Id="612b25d8-1497-4d5a-a01e-e584c2352627"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd34409a-4728-4e66-a10f-3c1e10576a75">
+                    <propertyInstance
+                      Id="b1bc60fc-64dc-4cef-b75a-d6452abf8354"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f71f021d-b68f-4ad2-8fdf-d34aeef695c9">
+                    <propertyInstance
+                      Id="855a2323-02c1-4a2a-b698-5a832b78f0f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5116b682-f592-4afe-a3c9-f87c4a9b7975">
+                    <propertyInstance
+                      Id="334e8f0e-bf4a-47b6-a798-1c361d503409"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2796aca3-a748-4b2d-b32c-3116a94f40ef">
+                    <propertyInstance
+                      Id="c15580e1-6ebd-476a-932a-81ee3f23b469"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d596e725-10b8-4581-9c77-6c22b31f3ff4">
+                    <propertyInstance
+                      Id="148e713f-dd3e-42d1-b323-53fecbebecbd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23cf8767-4e29-49f6-b4ed-679af3e327f6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24544683-1a1f-4610-b719-e1dad1d15111"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="573ffe2d-9b55-4deb-87c0-a8b64ed4ba58"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DPlayerTurn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ddef690c-2334-41ff-a4b9-1f39ae7b343e"
+            name="PlayerTurn"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8cade2c3-1346-4436-8194-ca3c072cbec8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DPlayerTurn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="02ab4ccd-9752-4819-bada-ff80e2f9a061"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d899db9-ead5-48a0-8cd7-a995a2a148a8">
+                    <propertyInstance
+                      Id="d12dbb97-ac66-4f66-a74d-c63f900a28ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a1ba4c7-5773-478a-8db4-f8ef610a863d">
+                    <propertyInstance
+                      Id="d55a06c4-00af-4117-b4dc-69163a5cf9f8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c40255d7-89a6-4914-9375-c1fe21081f70">
+                    <propertyInstance
+                      Id="5b1d25dc-f3c4-4bbe-bf8b-4fb620207ed1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="262aefff-6150-4feb-83c7-a235e0c52ec3">
+                    <propertyInstance
+                      Id="d48b5f23-6ef3-48b0-a5fd-b70c25394cdc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03932bfd-fc69-4c1c-8cb7-3c051ec9d392">
+                    <propertyInstance
+                      Id="e23dd31a-d21b-4aaa-8b45-970302348e6b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84676135-bca4-4b3b-afd9-c8dfe67a32e1">
+                    <propertyInstance
+                      Id="7230402e-9059-42d9-8f70-99b4a840d0e7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="10d95aef-f485-43ea-b3a5-fbcbf43194ca"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5353a061-5061-4db0-95b3-c464ab9007cd"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c4705186-cd48-4bba-8068-c6009700855e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DPlayerTurn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4d5243c-8c91-4aa8-aaa8-0f3e1fdeb4b2"
+                  name="newSuit"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c38da5ee-266c-4e32-a535-ff7062aa7f64"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DPlayerTurn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3DnewSuit"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9d178e2e-652c-45cf-b3bb-f0ae8341af73"
+            name="SetLegalMove"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a005641a-df18-4554-afad-9393ea88bd25"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DSetLegalMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ca592f1-2d5c-40fa-a10f-758f5fbe75a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d529610-0e46-4448-92eb-bbae45203c8c">
+                    <propertyInstance
+                      Id="ca211397-1d5c-4bd2-ab63-fca617e4cf6b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="799c1f58-c95a-4017-b404-ea877d55d412">
+                    <propertyInstance
+                      Id="96a50395-1ef2-4dbd-b01c-270aa452acfe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85213785-21d1-442c-a046-04c67cd37f50">
+                    <propertyInstance
+                      Id="659158a3-36a4-4ea9-b49b-34f7c84a5c46"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36f5297e-47e3-41e6-877c-5cacae2f60ee">
+                    <propertyInstance
+                      Id="cff260c2-4e18-43db-a534-3a944a860a48"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee62e526-2594-40b0-8b02-c61084cadc23">
+                    <propertyInstance
+                      Id="de3fd0cd-416e-434c-a39c-b2bf995d67f4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a097317-2770-4688-bec0-7428c7a6ee5e">
+                    <propertyInstance
+                      Id="2b2f1160-60a5-462d-966f-26b084686e7b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21e7f640-b923-423c-81b7-47d93da63dd7"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="62b694e0-9345-41ec-ac44-ae719fef73c4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DSetLegalMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4641079-694d-4065-a1ea-f3f3519f151e"
+            name="WhichCard"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="534865e2-f279-4cb5-942d-872866905480"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DWhichCard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9fb5574f-ab39-4d36-a73e-6e6c04d6051b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4564505b-f3cf-4d15-aac1-cbb9022932ca">
+                    <propertyInstance
+                      Id="636eefcf-0221-431f-abec-b199a214e872"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29d9ae4f-4ec2-4a2c-9bfa-8d1d5d65526c">
+                    <propertyInstance
+                      Id="5b54d58c-7c13-410a-a861-b42fd6e301a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73345657-b417-4604-9da7-6bc3bcda63a1">
+                    <propertyInstance
+                      Id="9ffc86cc-fecf-48e4-8285-1fcdc0bd6ce6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77f50d16-d3f2-474c-83b5-f826bd5b0787">
+                    <propertyInstance
+                      Id="b8e82466-5035-4dc7-a498-dd0acd76d4d1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6717b344-b2d0-45a2-abb7-edbfcec05ffb">
+                    <propertyInstance
+                      Id="77cf42c6-ef6b-44ac-9c5f-fd5fc9c9d916"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52429028-f762-40b1-97e2-5030956bad04">
+                    <propertyInstance
+                      Id="dcee25a8-3cc2-4386-8f98-b6375c8f3714"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21030cc5-1237-4e8e-b6e9-a5d4deeb1b5c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="efed5f99-0f5f-417a-b88d-a74303852975"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3199a871-868e-421f-9ad0-c266f8988a66"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3D(Name%3DWhichCard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard)]) ParameterIdentifier%3Dcard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4005d6d7-45bc-43df-939f-37fb50f6ff5b"
+            name="AddFromDeck"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fa749371-6209-4efd-b10e-f510fd21dc67"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DAddFromDeck"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8974f3d-cc78-4bcf-b01f-e0c27e343c03"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49a0b3bf-8fb6-43d1-ad0f-7c42dea88a83">
+                    <propertyInstance
+                      Id="70a5f010-dfc5-4319-9adf-a9cb3e6003e7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2175b8d6-bf63-4995-9ca8-27178a43ac94">
+                    <propertyInstance
+                      Id="fb465333-1613-4051-8d83-cfd4b07f114a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6af3f698-8897-40fb-a4c9-2465274a5869">
+                    <propertyInstance
+                      Id="4540d5ad-f9f9-468f-8d03-90ac6c56e672"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="078e9e56-effa-4f33-be8b-0063298adc94">
+                    <propertyInstance
+                      Id="ded52541-989f-40bd-abcd-628cb7747b4a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfe4cc4a-8381-4c1b-b145-8163bbcbc97f">
+                    <propertyInstance
+                      Id="2036d809-4900-4dc1-aa4b-14f055fe3244"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0378d56-8d3a-4598-b144-33e218c693b0">
+                    <propertyInstance
+                      Id="766bd5a5-7418-4c53-a205-8ad93a7588a0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a75849d9-f50e-47e0-a81e-555f63dd0cec"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="313f4622-1eaa-4076-b7d1-b633c4682b88"
+            name="BestCompCard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="694d3c05-308f-489f-b63c-e7282e5dae82"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DBestCompCard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b133f18d-f3ed-4267-9e51-344ca313ad35"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="849b2eaf-cb30-438b-a49f-804b10eb75f8">
+                    <propertyInstance
+                      Id="2d33a6e1-a997-4d09-83f3-267c061d735d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40fcc51b-b590-4edc-be20-47f9c3270d9e">
+                    <propertyInstance
+                      Id="376e256b-d269-41e3-9e2f-bc4c1a7c9f62"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46e82e33-ced1-44a1-98c0-828c72a2c6c0">
+                    <propertyInstance
+                      Id="1d894d67-89be-4ad3-8aaa-728958d05d88"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb6ed3ed-1a31-446d-ad94-5654fc1d54fc">
+                    <propertyInstance
+                      Id="e360a0ce-a17e-4dc2-af07-89b3011af736"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f97a5a8-de9c-41aa-87d1-74f6dc49a8fb">
+                    <propertyInstance
+                      Id="edc00dd4-d376-4c28-a30d-2a864a15e9bc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5bbc662-a8cf-4a0a-8a03-465e3c2a7288">
+                    <propertyInstance
+                      Id="7d49df7c-3ed6-4f44-920e-fc5b0627e7ce"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1029285e-96fd-401d-9e05-492804476d86"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="40e1c85c-7345-40a1-ad0d-3139d4cad924"
+            name="CheckTie"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2415ba88-3334-49ef-a284-8c0374ac0a2d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DCheckTie"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c64509e8-5134-4df2-9761-1d18eadf0927"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2075f8d1-6224-40ee-8d55-13bca377b524">
+                    <propertyInstance
+                      Id="aa4a637e-6abc-4dc3-9705-16a087a0a9c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05863bff-9b2b-4e98-86ff-1e488b693996">
+                    <propertyInstance
+                      Id="62061beb-2eaf-44f3-aa11-2900541dfed9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e642c93-2def-4376-a4f8-df0a0f7e5286">
+                    <propertyInstance
+                      Id="73164a11-f32a-45cb-a391-84f34f61628f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1cd8657-0581-4561-9684-c76a4d7cb0bc">
+                    <propertyInstance
+                      Id="63490744-aed5-4cde-9c91-f33756fe42b0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a7420ea-d64d-4cec-9a36-6bbc08ac602e">
+                    <propertyInstance
+                      Id="e1a3b0f5-ed76-4450-8a1d-ce4ec3e2b657"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="552a266d-2ff9-4bae-bcb7-8b55d7208bbe">
+                    <propertyInstance
+                      Id="5357206f-56b2-4c1d-b957-2fd504b9162e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8445404d-2211-4de5-84d8-2cd28f7b53ec"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9ee50baf-75ab-489e-8d84-2bf0bcbeeb52"
+            name="ComputerTurn"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bca6b291-a7fc-4580-b454-d92c42cec36a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DComputerTurn"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d79d200f-77f5-4deb-a069-9aa2c411e1b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0f4cafb-dc58-466d-9242-77d88d747e14">
+                    <propertyInstance
+                      Id="ac9057e6-cc9f-4f0a-84db-f38dfcddba15"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6789799-4471-43f8-b9ce-850b00f86325">
+                    <propertyInstance
+                      Id="d92cee4f-8598-408c-85d1-6afb94e62fd3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89338b9b-4bb0-4551-bf5d-f5b6a915dc87">
+                    <propertyInstance
+                      Id="c7f8bf02-3ead-46a2-b4e8-76fec48d304f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b94708ae-d839-4adf-9641-63972c08ca0d">
+                    <propertyInstance
+                      Id="feb27eac-33cb-4fd4-8012-baee9d700599"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="012e5484-d0a3-4ef8-80ee-562b24ebd994">
+                    <propertyInstance
+                      Id="499e8b98-8781-4611-b672-06409fa43911"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e5856fc-f89f-4ef2-870c-2f423c08bd64">
+                    <propertyInstance
+                      Id="323d10b0-e144-4ba3-9dee-bed3c9c946ea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="5ac19722-129f-4160-a7ce-6c9cc7bafdd0"
+            name="DealInitial"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="db21b665-135e-4420-b6db-1c1c40eba0af"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DDealInitial"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7f0d2118-4156-4ef3-8d82-75afed745789"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="984ca9bd-3361-42b8-89d2-872d616f8945">
+                    <propertyInstance
+                      Id="67e78645-aed3-4b9a-91d9-ec7ec6d4c584"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa3ed8c3-2112-4735-8db7-178e36f5f683">
+                    <propertyInstance
+                      Id="880207d1-ce0c-4b73-a1f1-ebcc07eb8577"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d47f5c0-6b63-4763-b4a6-d21ddf4628dc">
+                    <propertyInstance
+                      Id="f9620107-c5e7-4efd-8757-e4f521ad78d8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92cee900-f0dd-4dbf-85c3-2b575bb37cf9">
+                    <propertyInstance
+                      Id="0fdc9666-26e0-4b4e-a682-bd6f4c44634f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="641af9ef-8f89-467c-86ff-4862dedd4331">
+                    <propertyInstance
+                      Id="d1d76e7b-fd1e-4ff4-bc6b-a6a443f52004"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bb8315a-9942-431a-8192-d5733bb42bba">
+                    <propertyInstance
+                      Id="39e4a858-42eb-41f2-8cf5-a1d7ebe6c74c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="74bd3caf-0c3c-4759-8b00-b1441d905ca1"
+            name="DeckDiscardSwap"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bc30ed04-e286-42e4-9a05-e85579ac13b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DDeckDiscardSwap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b0a4f457-ca27-43c0-a9f2-77373003756f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7fc9f3f-4066-4e69-83a2-365d18b10f77">
+                    <propertyInstance
+                      Id="a946bdb8-7b72-4175-9f58-9d6f0a51d558"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e56a36fc-5883-4731-87fb-14dcc71da444">
+                    <propertyInstance
+                      Id="781cdd1b-40f2-44b0-b3a2-d02cbc503ed7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a27886a0-7b08-4e57-8019-67c7ba4531bf">
+                    <propertyInstance
+                      Id="2b76fbd6-b8c3-418e-954b-8f57665b87b1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="560e38b9-faaf-4732-9d53-bd77d9403f9c">
+                    <propertyInstance
+                      Id="16d8904b-d45b-41f2-8e91-35f311e5cc51"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f15a868b-5262-408d-90ec-68e98add4028">
+                    <propertyInstance
+                      Id="fbeaafbb-2862-491f-a7fb-3e65b5aa99f6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72c1b8c9-5322-4bd2-b175-476da9021e32">
+                    <propertyInstance
+                      Id="7a7cc39e-eef7-4036-8153-32a83ee8925d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="38efecd6-6b9c-4297-978a-6aa8f5ca2fd9"
+            name="GetComputerHand"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f6041e5d-650d-43f7-a0ea-43ad36a0792a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DGetComputerHand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45b6d822-4720-4559-8f64-da13cdd01e25"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a690d03-e976-4559-9c2c-b562b33bc81d">
+                    <propertyInstance
+                      Id="91b7dcda-09a7-411d-9fc9-3e61813a620e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="add0ade9-ad2c-4e18-ab95-2344d5923f13">
+                    <propertyInstance
+                      Id="15ad570e-6dd5-4deb-9dc2-8eca8386ae1d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e30578df-5a9d-4a2b-a44b-058db0a41a4e">
+                    <propertyInstance
+                      Id="7e6c4a05-f369-4709-b8d8-24089f13ff21"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ac6baaf-9226-4ae4-8bc5-87f3e094cbac">
+                    <propertyInstance
+                      Id="677f1c98-8052-401b-9f49-49b21f9eebf2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22473425-3866-4c63-aa26-6973d5762ccd">
+                    <propertyInstance
+                      Id="f5768d5a-a813-49eb-acc0-07547536bb0d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8077b3ee-5b7d-45ab-80ef-0def1f5cc356">
+                    <propertyInstance
+                      Id="b979b4b2-9cf1-4632-9379-9155a92a2bb6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c727f7ef-84ea-4dd7-8936-fd453214867b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+                      LastKnownName="Hand"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ce2a7ead-8a75-4252-95bd-3662d102b07b"
+            name="GetDeck"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="32b36e12-8cbd-44a2-b75c-a4538082a90c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DGetDeck"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1b6f1ea-a058-43e1-ac2c-29ed370533b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06d2acb9-03c3-4a8f-8cd1-3b436edd9bbf">
+                    <propertyInstance
+                      Id="b6dfceb2-3a09-40fb-8e19-69530a358f5d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16dde957-2d66-47f0-9465-7bb07cdf0976">
+                    <propertyInstance
+                      Id="bb041c3e-4618-4c1b-85f5-f32ce0539761"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59d3c79d-b69f-424a-b094-2d5936729f62">
+                    <propertyInstance
+                      Id="ed4039a6-3d66-4f12-ab71-d23243437284"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e1cba12-dd01-4ca9-92c6-555eec9c54b0">
+                    <propertyInstance
+                      Id="ba92bce0-126b-4da1-b6df-9f4e701e6422"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1dea6dc5-d907-44d2-a1e4-1237e06b46a5">
+                    <propertyInstance
+                      Id="60f26493-fbcb-4998-8095-411a2c6dd70a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40e640f4-5b36-4cc0-a1d1-80de10b0fdbb">
+                    <propertyInstance
+                      Id="b8dbab13-2443-4490-9f0f-96c3de00ecf8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e273b323-0a76-4081-9289-91a873c0243c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4528411a-0754-46dd-a10f-d1bfa14137e0"
+                      LastKnownName="CardPile"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="04e71dc0-4da3-42c0-9992-6fb818ac032b"
+            name="GetDiscard"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4dfe3226-dfa2-419d-889a-3ce9e1a09a6d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DGetDiscard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e43cd99d-e319-4e10-8df7-e1344408e16e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe6f4673-1764-4781-9a5a-da9b7a7df159">
+                    <propertyInstance
+                      Id="246b15c9-1cc9-49e2-a405-d7b9abb228ab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0df57a1f-02f4-40a0-b44a-538261498a8a">
+                    <propertyInstance
+                      Id="70f71b6c-583e-4634-bf98-fa4eab6298ff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eba5f213-8a69-4fb5-8db1-8216b6bf5cdb">
+                    <propertyInstance
+                      Id="16657834-8be1-480d-9465-c0aa9a18ba3d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2661a088-077b-4877-883b-05c1c355352c">
+                    <propertyInstance
+                      Id="35650ccc-46e2-431c-9766-af5c9773c85e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cdc0943-156c-4489-af66-7214f0cdb203">
+                    <propertyInstance
+                      Id="e273f4c3-75a8-4cd8-a11f-c9a49867d6e8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9e15a26-d0c3-4a69-9e87-ca4bac080853">
+                    <propertyInstance
+                      Id="94673d77-c9e2-415f-b161-299d842735b1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="820252e4-0767-476c-a995-acfe69ee7fcb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4528411a-0754-46dd-a10f-d1bfa14137e0"
+                      LastKnownName="CardPile"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a2abe7a4-f449-4769-9495-c1f91296bca0"
+            name="GetPlayerHand"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9af1c56b-7787-4ec7-ad37-7ad150fb11de"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DGetPlayerHand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4ca920f-c428-440f-aad2-5f1d36276cf9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ebf0e68-fd27-4847-9f5c-08c1624e0ffd">
+                    <propertyInstance
+                      Id="0c560412-98dc-4ae6-beea-f1feaf58a32c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ceb37e6-ecb9-40c8-a54d-655c3afb0ea1">
+                    <propertyInstance
+                      Id="e938cf03-d743-4086-baa0-aedb56514507"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7840faf5-599e-4d87-ad08-217e928e5a1d">
+                    <propertyInstance
+                      Id="512e988c-a123-44b1-9e4c-85886dba821a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04f249b7-3972-4624-ab58-8cf4fb30d67d">
+                    <propertyInstance
+                      Id="7fa6722d-0ece-468f-88af-0c7e24851930"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="707e7dea-e7d8-41f3-bfc8-96b65275998b">
+                    <propertyInstance
+                      Id="90904ba3-333e-4aa6-9aa5-e81073b7431d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="114b0c84-960f-42ad-9388-f2fa6d2c7ef0">
+                    <propertyInstance
+                      Id="8d9790d1-c257-4300-9ad1-c4ec51f30df1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f8f8c4f-b05d-4be8-bf16-6dfae78969cc"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+                      LastKnownName="Hand"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5a185892-26c9-4273-861a-8ea6ef01baec"
+            name="GetTopOfDiscard"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c1c919ec-afda-4062-aff4-6298e398eabd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DGetTopOfDiscard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22a8220c-f1ff-4dad-bb1b-fe290a214f47"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36468585-476c-4a4a-b336-f5b653ed0630">
+                    <propertyInstance
+                      Id="55cc3382-fa8a-4fb2-9d43-a1c0076b9003"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e253fc2d-31b1-4e35-9234-32c742854585">
+                    <propertyInstance
+                      Id="66ab54c4-7efd-4612-89c4-99531ae32048"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d005803-e505-4a5b-bd52-66c700aad102">
+                    <propertyInstance
+                      Id="9238c142-18e4-4527-b676-ab5d85605301"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22c4bea4-4664-4ac9-ba8a-fdb7144cc341">
+                    <propertyInstance
+                      Id="55893587-8214-4a50-82a9-10ace5668d53"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28d5babe-e9d0-4e3c-abcd-724636b98941">
+                    <propertyInstance
+                      Id="69f9c556-68de-4cbb-8655-e71f4a12449f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fd8519a-c18e-4b90-b63e-c4077375c2d0">
+                    <propertyInstance
+                      Id="27c12a45-9bd7-473b-84aa-248041fbad4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9fd8f261-80f3-4ad5-80a8-a56f1b05f281"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+                      LastKnownName="Card"
+                      LastKnownLocation="Package1_1701.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bb88c636-5d6f-4b39-a97f-fdde8918e76e"
+            name="IsEndGame"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dacb44fb-0d75-4ea2-b5ba-ca5344dbd4a7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DIsEndGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6dddff47-7832-40fa-9faf-6a5e543dcfb6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f9b7529-aa59-4788-906f-effddbd5343b">
+                    <propertyInstance
+                      Id="0caef901-b4b6-4247-bece-43688818843f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1810f814-1f9b-4c40-bc77-73d999540d92">
+                    <propertyInstance
+                      Id="6709c616-3bdd-4967-ac9f-bfa67e3e8e5c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c14af740-2a7a-453a-ac92-5aafb1be5050">
+                    <propertyInstance
+                      Id="1535d3cf-9ba5-4958-8b17-6679d373b039"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a04a032-9d48-459f-b12e-7ce2c45548c6">
+                    <propertyInstance
+                      Id="cdaa8686-f379-4c10-8e23-add0510088a0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a24b2156-4b93-4449-ba31-744537f76c0d">
+                    <propertyInstance
+                      Id="f2eb5ed8-5047-4d50-8065-a0929a9c802e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5405f26b-2ade-4621-be19-026d68dbd3f4">
+                    <propertyInstance
+                      Id="20cd8a93-516e-4d40-85de-5be460c57635"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9caf36d2-3b9f-47c1-b928-0a6f0f9102e0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="GuiGamesUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5cf211df-ad6e-4443-9aa3-87c7b7835db5"
+            name="SetupGame"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="19334621-39e2-4f47-8ae4-f43318a6257b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DSetupGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77dd822f-df9d-4081-b9b6-e11f68ee4685"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ad695de-8ada-4d67-9fd2-7d9162b9d1ae">
+                    <propertyInstance
+                      Id="017feb5e-ffce-419c-9a05-2b2ff3e7ab2b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="446f8834-1f63-4c40-ad8a-1166b7be92ec">
+                    <propertyInstance
+                      Id="add944ac-3dc7-41cb-b45a-28aff5885118"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa388e0c-6665-4d91-bd35-c86571e75d0f">
+                    <propertyInstance
+                      Id="b0967cc1-7de9-4ec7-87c3-6168abf2552e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a6bf39e-a0ef-4408-9071-3717443ca84f">
+                    <propertyInstance
+                      Id="ffbbcfc8-3b99-45a4-a60b-cc72e7029f17"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3887a300-0a60-4a05-bb1d-2e83c09d25b8">
+                    <propertyInstance
+                      Id="f1763756-e7d5-4800-8784-1ce4032312f7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a04d087f-9a5d-49d8-ac24-262da39aa5d3">
+                    <propertyInstance
+                      Id="cc4cd2b7-5197-4150-aeb4-a1b93985934c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="bde1a0d4-df9c-4f98-95d5-4bd438e160b3"
+            name="SortPlayerHand"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a8d322ce-4485-4b6c-921b-533a4bc483c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FGame_Class_Library%2Fbin%2FDebug%2FGame_Class_Library.dll&quot; Namespace%3DGame_Class_Library Type%3DCrazy_Eights_Game Member%3DSortPlayerHand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c001a447-d38f-48c2-8ba2-a4526956ca64"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16b5787e-fe2e-4509-9242-19651f730d96">
+                    <propertyInstance
+                      Id="1e9894ae-e352-4d88-8747-2b089ab61de3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="098d8e11-ba71-473c-b7d2-74ad0490159d">
+                    <propertyInstance
+                      Id="efae09c4-420a-468d-afc4-263b3c214b3b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d71132f-6bb8-48bf-8af4-ade2d399750b">
+                    <propertyInstance
+                      Id="c1f52a32-267e-4a09-af19-a965a26ca2a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c410bb4-b2da-4abb-bac9-1ea16bd6aff8">
+                    <propertyInstance
+                      Id="31d25d02-fc10-4581-b6ed-77b0a299ca58"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="966b75c7-75d8-4d41-9788-1a6596cd0a6c">
+                    <propertyInstance
+                      Id="9ec77fa7-3a28-4fe4-947a-65465a5a733a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1acb3065-69f7-4391-841f-6e22deb3e4e0">
+                    <propertyInstance
+                      Id="496425f8-23ff-49b6-89a2-bbf8c159a7f5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

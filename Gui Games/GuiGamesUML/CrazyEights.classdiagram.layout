@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CrazyEights">
+  <logicalClassDesignerModelMoniker Id="bd51ee82-2e60-4971-b8ca-deefb727a161" />
+  <nestedChildShapes>
+    <classShape Id="2d6a1e46-295c-4644-8422-82e8213347a2" absoluteBounds="2.25, 0.5, 3.375, 5.5120542353391642" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="7ca4a698-b3d3-4c8c-bc22-f0fdfcd5541c" LastKnownName="Crazy_Eights_Game" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e2f223fe-908d-4b9b-a349-2c896e6b500d" absoluteBounds="2.265, 1.0153356393178306, 3.3449999999999998, 1.162109337747097" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="53427023-07f6-4c67-a883-868eb698e62e" absoluteBounds="2.265, 2.1874449770649278, 3.3449999999999998, 3.7246092582742367" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

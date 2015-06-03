@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1e217452-9617-4055-bb21-192e6673a965"
+  name="Shared_Game_Class_Library"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="630abb4e-ee27-447c-9880-f10688f6be85"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DShared_Game_Class_Library"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="cae9f886-6ec4-47f7-af67-8fe58e669e0c"
+        name="Hand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cd3839e8-89b8-4088-9c75-ef1eac82f57f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DHand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="38858ea9-0081-472e-8525-dd95449b69bd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a5041999-4d6a-43db-a018-d921d865cb20">
+                <propertyInstance
+                  Id="22b45e74-141a-4d19-9ee6-2849f497abaf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="610f4a80-86dd-4db4-ba04-fe397cdbab72">
+                <propertyInstance
+                  Id="d8ab8803-1dd7-48e2-95a9-b748b7ea5321"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7f5613d-809f-41c4-a3c0-db0bff01f0f3">
+                <propertyInstance
+                  Id="1b7e1a18-3230-406d-87a1-0b56dd1556f2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2117fa36-7976-4c1e-8796-bbd99a83bf60">
+                <propertyInstance
+                  Id="ea3c491d-9b20-40f5-933b-aaed12cfac96"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fa051b4-83b5-4f12-a785-84165ba01922">
+                <propertyInstance
+                  Id="51e97ff1-630d-45a2-8e85-eb29cc38cf98"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d20201f3-43ab-40aa-8289-88d3726d477c"
+        name="Card"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="886c7427-e048-41c6-876c-bb4941230ee8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCard"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0532bac-4d22-4643-980b-0f11620733c5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4611493d-9b06-408f-a9b2-29339d1b6122">
+                <propertyInstance
+                  Id="3bdfba2c-76e7-47da-93a7-d1e36825df31"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b073bc88-71d4-4d94-8504-73582e802338">
+                <propertyInstance
+                  Id="98b3741d-d0fe-4b28-ab5d-ef007405a505"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdde8976-9f67-43db-91ec-50c3be008f72">
+                <propertyInstance
+                  Id="0468ac32-c4ee-428e-885a-da27d6d2199d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ce519d7-9787-44d7-8f76-8626e45ec706">
+                <propertyInstance
+                  Id="e054757d-3c75-4b89-88aa-04b4b47eca46"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76a40eeb-d7d8-44c1-96ba-64579c654e9b">
+                <propertyInstance
+                  Id="d233e045-2806-4d9c-99c5-751f37ffd663"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4528411a-0754-46dd-a10f-d1bfa14137e0"
+        name="CardPile"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1dc0314e-c090-4f22-9770-82d66a9ba5b6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fthall_000%2FGoogle Drive%2FUni%2FCAB201%2FAssignment%2FAssignment4%2FGui Games%2FShared Game Class Library%2Fbin%2FDebug%2FShared Game Class Library.dll&quot; Namespace%3DShared_Game_Class_Library Type%3DCardPile"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c2474aa8-f98e-4539-8e10-24f1585b36d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a5146e8-41ce-46e1-b0da-265bb9e5e19a">
+                <propertyInstance
+                  Id="58669132-638e-4194-a354-36dcb47e04f4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01e16779-5dc9-48f3-a781-9065b92c9a51">
+                <propertyInstance
+                  Id="e5a5abed-f8fa-4535-b221-7b3c886f09de"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef5f8128-5889-4da3-b4bb-770f33af30cb">
+                <propertyInstance
+                  Id="b8066b53-153b-496b-82c1-b16039ce89f9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b851c00-7de4-4bd3-b805-b974c14ca824">
+                <propertyInstance
+                  Id="fa067ad5-580d-4be8-961f-1c64b59ce954"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99176833-44ca-417c-a79b-1f2a1dd75009">
+                <propertyInstance
+                  Id="5a9c833d-5ec2-4730-a8fc-24832297a079"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

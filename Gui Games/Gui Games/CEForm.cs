@@ -162,7 +162,7 @@ namespace Gui_Games
             else
             {
                 bool check = Crazy_Eights_Game.PlayerTurn(Selected);
-                if (check) //
+                if (check) 
                 {
 
                     Crazy_Eights_Game.ComputerTurn();
@@ -246,9 +246,9 @@ namespace Gui_Games
         /// </summary>
         private void EndGame()
         {
-            int loss = -1;
-            int win = 1;
-            int tie = 0;
+            const int loss = -1;
+            const int win = 1;
+            const int tie = 0;
             int victory = Crazy_Eights_Game.IsEndGame();
             if (victory == loss)
             {
